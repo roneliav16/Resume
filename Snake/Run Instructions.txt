@@ -1,0 +1,30 @@
+In order to run the SNAKE computer,
+ all the files must be downloaded into a folder on your computer.
+For example: downloading all the
+ files and storing them in a folder in the following path "c:/tasm/bin".
+Running 
+the game will be in a work environment that fits the program written in
+ ASSEMBLY. The game will not work on a new WINDOWS operating system.
+Therefore, the game must be run on the DOSBOX operating system.
+The following lines of code must be entered to run the game:
+1. mount c: c:\ I
+2. C: I
+3. cd tasm/bin I
+4. project I
+
+After that, the game will start. There are few problems in the game :) and therefore, it is not possible to move to one side and then straight to the other side... You have to finish so that the snake aligns to one line and it moves once more.
+good luck!!
+בכדי להפעיל את המחשב SNAKE, יש להוריד את כל הקבצים לתוך תיקייה במחשב שלכם.
+למשל: הורדת כל הקבצים ואחסונם בתוך תיקייה בנתיב הבא "c:/tasm/bin".
+הפעלת המשחק תהיה בסביבת עבודה שמתאימה לתוכנית שכתובה בASSEMBLY. המשחק לא יעבוד במערכת 
+הפעלה חדשה של WINDOWS.
+לכן, יש להפעיל את המשחק במערכת ההפעלה DOSBOX.
+יש לרשום את שורות הקוד הבאות בשביל להפעיל את המשחק:
+1. mount c: c:\                                   I
+2. C:                                             I
+3. cd tasm/bin                                    I
+4. project                                        I
+
+לאחר מכן, המשחק יתחיל. יש מעט בעיות במשחק :) ולכן, אין אפשרות לזוז לצד אחד וישר לאחר מכן לצד אחר... י
+ש לסיים שהנחש יתיישר לקו אחד וזה לזוז פעם נוספת.
+בהצלחה !!
