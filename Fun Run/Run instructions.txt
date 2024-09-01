@@ -1,0 +1,28 @@
+First, it is necessary to download the files to a folder on your computer.
+After that, the only change in the code you will have to make is to copy the path to the folder
+ of the images you downloaded, and change the path in only 2 places in the code: in the Game class,
+and the Server class.
+Up to 4 players can play in the game at the same time.
+On one computer, the SERVER must be run,
+ (doesn't have to be one of the four players), and then, the other players can connect to the game,
+That means any player can run the program from their user.
+After that, the user who activated4
+ the SERVER must decide how many players will play (you can also choose before everyone connects).
+After that, the game will start.
+Note that jumping slows down your player's speed,
+ so they can overtake you, be careful of obstacles and consider reaching the surprise box.
+Note that you have a limited
+ and short time until the gift does not disappear, use it quickly! If not, she will only delay you...
+good luck!!!
+
+ראשית, יש צורך להוריד את הקבצים לתיקייה במחשב שלך.
+לאחר מכן, השינוי היחידי בקוד שתצטרך לעשות זה להעתיק את הנתיב לתיקיית התמונות שהורדת, ולשנות ב2 מקומות בלבד בקוד את הנתיב: במחלקת ה- Game, 
+ומחלקת ה-Server.
+ניתן לשחק במשחב עד כ-4 שחקנים במקביל.
+במחשב אחד יש להריץ את הSERVER, (לא חייב להיות אחד מתוך ארבעת השחקנים), ולאחר מכן, שאר השחקנים יכולים להתחבר למשחק, 
+כלומר כל שחקן יכול להריץ את התוכנית מהמשתמש שלו.
+לאחר מכן, על המשתמש שהפעיל את הSERVER, להחליט כמה שחקנים ישחקו (ניתן לבחור גם לפני שכולם יתחברו).
+לאחר מכן, המחשחק יתחיל.
+שימו לב שקפיצה מאטה את מהירות השחקן שלכם, וכך יוכלו לעקוף אתכם, היזהרו ממכשולים ותישקלו להגיע לקופסת ההפתעות.
+שימו לב שברשותכם זמן מוגבל וקצר עד שהמתנה לא תיעלם, השתמשו בה במהרה! אם לא היא רק תעכב אתכם...
+בהצלחה !!!
