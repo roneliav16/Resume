@@ -48,24 +48,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* GitHub Projects Link */
-#github-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #0066cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s, transform 0.3s ease;
-}
-
-#github-link:hover {
-  background-color: #004b99;
-  transform: translateY(-2px);
-}
-
 /* Personal Details */
 .personal-details ul {
   list-style: none;
@@ -126,6 +108,33 @@ body {
   text-decoration: underline;
 }
 
+/* GitHub Projects Section */
+#github-projects {
+  margin-top: 50px;
+}
+
+#github-projects h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+#github-projects ul {
+  padding-left: 20px;
+  border-left: 4px solid #0066cc;
+}
+
+#github-projects ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+#github-projects ul li strong {
+  color: #333;
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
@@ -149,7 +158,11 @@ body {
     font-size: 14px;
   }
 
-  #github-link {
+  #github-projects h2 {
+    font-size: 24px;
+  }
+
+  #github-projects ul li {
     font-size: 14px;
   }
 }
@@ -173,13 +186,11 @@ body {
     padding-left: 10px;
   }
 
-  #github-link {
-    font-size: 12px;
-    padding: 8px 16px;
+  #github-projects h2 {
+    font-size: 22px;
   }
-}
 
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
+  #github-projects ul li {
+    font-size: 12px;
+  }
 }
