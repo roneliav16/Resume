@@ -48,6 +48,24 @@ body {
   transform: translateY(-2px);
 }
 
+/* GitHub Projects Link */
+#github-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#github-link:hover {
+  background-color: #004b99;
+  transform: translateY(-2px);
+}
+
 /* Personal Details */
 .personal-details ul {
   list-style: none;
@@ -130,6 +148,10 @@ body {
   .personal-details ul li {
     font-size: 14px;
   }
+
+  #github-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -150,4 +172,14 @@ body {
   .section ul {
     padding-left: 10px;
   }
+
+  #github-link {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
 }
