@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="/style/cart-style.css" />
+  <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+  <script src="/scripts/cart.js" defer></script>
+  <script src="scripts/UI-Preferences.js" defer></script>
+  <script src="/scripts/logout.js" defer></script>
+
+</head>
+<body>
+  <button id="logoutBtn" class="logout-btn" style="display: none;">🚪Logout</button>
+  <button id="toggleThemeBtn">🌙 Dark Mode</button>
+
+  <h1>Your Shopping Cart</h1>
+  <div id="cart-container">
+    <!-- Items will be loaded here dynamically -->
+  </div>
+  <div class="cart-controls">
+    <button id="clearCartBtn">🗑️Clear All Items</button>
+    <button onclick="window.location.href='store.html'">🔙Back to Store</button>
+    <button onclick="window.location.href='checkout.html'" id="checkoutBtn">💳Proceed to Checkout</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "admin",
+    "role": "admin",
+    "preferences": {
+      "mode": "light"
+    },
+    "rememberMe": false,
+    "fullName": "Administrator"
+  },
+  "ron": {
+    "username": "ron",
+    "password": "1234a",
+    "role": "user",
+    "preferences": {
+      "mode": "light"
+    },
+    "rememberMe": false,
+    "fullName": "Ron Eliav"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "p1": {
+    "title": "Camping Tent",
+    "description": "4-person waterproof tent",
+    "price": 120,
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S083f51e124014e7da3ad063792f9ccbei.jpg_960x960q75.jpg_.avif",
+    "stock": 496,
+    "rentalDays": 10,
+    "addedBy": "Administrator",
+    "user": "admin"
+  },
+  "p2": {
+    "title": "DSLR Camera",
+    "description": "Professional Canon camera",
+    "price": 250,
+    "image": "https://global.canon/ja/c-museum/wp-content/uploads/2016/04/dslr846_b.jpg",
+    "stock": 794,
+    "rentalDays": 7,
+    "addedBy": "Administrator",
+    "user": "admin"
+  },
+  "p3": {
+    "title": "Chair",
+    "description": "Brown Chair",
+    "price": 5,
+    "stock": 97,
+    "image": "https://www.ikea.com/us/en/images/products/pinntorp-chair-light-brown-stained__1296225_pe935730_s5.jpg",
+    "rentalDays": 50,
+    "addedBy": "Ron Eliav",
+    "user": "ron"
+  }
+}

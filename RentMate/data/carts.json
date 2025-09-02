@@ -1,0 +1,47 @@
+{
+  "ron": [
+    {
+      "id": "p2",
+      "name": "DSLR Camera",
+      "description": "Professional Canon camera",
+      "price": 250,
+      "maxRentalDays": 7,
+      "days": 1,
+      "image": "https://global.canon/ja/c-museum/wp-content/uploads/2016/04/dslr846_b.jpg",
+      "addedBy": "Administrator"
+    },
+    {
+      "id": "p1",
+      "name": "Camping Tent",
+      "description": "4-person waterproof tent",
+      "price": 120,
+      "maxRentalDays": 10,
+      "days": 1,
+      "image": "https://ae-pic-a1.aliexpress-media.com/kf/S083f51e124014e7da3ad063792f9ccbei.jpg_960x960q75.jpg_.avif",
+      "addedBy": "Administrator"
+    },
+    {
+      "id": "p3",
+      "name": "Chair",
+      "description": "Brown Chair",
+      "price": 5,
+      "maxRentalDays": 50,
+      "days": 1,
+      "image": "https://www.ikea.com/us/en/images/products/pinntorp-chair-light-brown-stained__1296225_pe935730_s5.jpg",
+      "addedBy": "Ron Eliav"
+    }
+  ],
+  "admin": [
+    {
+      "id": "p1",
+      "name": "Camping Tent",
+      "description": "4-person waterproof tent",
+      "price": 120,
+      "maxRentalDays": 10,
+      "days": 1,
+      "image": "https://ae-pic-a1.aliexpress-media.com/kf/S083f51e124014e7da3ad063792f9ccbei.jpg_960x960q75.jpg_.avif",
+      "addedBy": "Administrator"
+    }
+  ],
+  "umevj6a3u": []
+}

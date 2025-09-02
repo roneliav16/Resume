@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentMate - Home</title>
+  <link rel="stylesheet" href="./style/index-style.css"/>
+  <link rel="stylesheet" href="./style/UI-Preferences.css"/>
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/UI-Preferences.js" defer></script>
+</head>
+<body>
+  <h1>Welcome to RentMate</h1>
+  <p>Whatever you need — equipment, experiences, or essentials — RentMate has it ready to rent.</p>
+  <a href="/ai.html" class="btn-explode">🚀 Try RentMate AI</a>
+  <a href="disputes.html" class="btn-primary">
+    <span class="btn-glow"></span>
+    <span class="btn-label">⚖️ Dispute Center</span>
+  </a>
+  <button onclick="window.location.href='stats.html'" id="statsBtn">📈 Stats</button>
+
+
+  <div class="button-group">
+    <button class="userChangesBtn" onclick="window.location.href='profile.html'" style="display: none;" id="userChangesBtn">👤Change User Info</button>
+    <button id="loginButton" onclick="window.location.href='login.html'">🔐Login</button>
+    <button onclick="window.location.href='register.html'">📝Register</button>
+    <button onclick="window.location.href='store.html'">🏬Visit Store</button>
+  </div>
+  <button class="logout-button" id="logoutBtn" style="display: none;">🚪Logout</button>
+  <button id="toggleThemeBtn">🌙 Dark Mode</button>
+
+  <div class="header-buttons">
+    <button class="my-items-button" onclick="window.location.href='myitems.html'">🧾My Items</button>
+    <button id="manageBtn" class="Manage-button" onclick="window.location.href='admin.html'" style="display: none;">📊Manage Products</button>
+  </div>
+  <div class="footer">
+    <div class="footer__inner">
+      <span>© 2025 RentMate</span>
+      <span class="footer__sep"></span>
+      <span>Contact: <a href="mailto:roneliav16@gmail.com">roneliav16@gmail.com</a></span>
+      <span class="footer__sep"></span>
+      <button class="readme-button" onclick="window.location.href='readme.html'">📖 Readme</button>
+      <button class="readme-button" onclick="window.location.href='llm.html'">🤖 LLM</button>
+    </div>
+  </div>
+</body>
+</html>

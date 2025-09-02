@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RentMate - README</title>
+  <link rel="stylesheet" href="/style/index-style.css" />
+  <link rel="stylesheet" href="/style/readme.css"/>
+</head>
+<body>
+  <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+  <h1>📘 RentMate - README</h1>
+
+  <h2>🏪 Store Name:</h2>
+  <p>RentMate</p>
+
+  <h2>📦 What are you selling?</h2>
+  <p>This is a rental platform where users can post and rent items such as electronics, tools, or equipment.</p>
+
+    <h2>📄 Additional Pages:</h2>
+    <ul>
+    <li><strong>RentMate AI:</strong> Allows querying any product found on the internet to determine the optimal rental price for it. <em>(Server: <code>POST /api/ai/price-suggest</code>)</em></li>
+    <li><strong>Stats:</strong> Displays basic statistics about the user's activity (number of products created, purchases made, average rental days, and more). <em>(Server: <code>GET /api/stats/my</code>)</em></li>
+    <li><strong>Dispute Center:</strong> Allows users and the Admin (both sellers and buyers) to manage discussions about complaints regarding delays or damaged products (open disputes, replies, and closing disputes). <em>(Server: <code>GET /api/disputes</code>, <code>POST /api/disputes</code>, <code>POST /api/disputes/:id/reply</code>, <code>POST /api/disputes/:id/resolve</code>)</em></li>
+    <li><strong>Change User Info:</strong> Page for editing user details and display preferences (including password changes). <em>(Server: <code>GET /api/account/profile</code>, <code>POST /api/account/profile</code>, <code>POST /api/account/change-password</code>)</em></li>
+    </ul>
+
+  <h2>🛠️ How to Operate:</h2>
+    <ul>
+      <li><strong>RentMate AI ChatBox:</strong> Go to the home page, enter a product name, your price idea, rental days and his description, and the system will search the web to suggest an optimal rental price.</li>
+      <li><strong>Stats:</strong> Open the home page, click on "Stats" button and your statistics will load automatically — no manual input needed (Works only if you are logged in).</li>
+      <li><strong>Dispute Center:</strong> View the list of disputes related to you, open a new dispute, reply in an existing thread, or resolve a dispute if you are the owner/admin (Works only if you are logged in).</li>
+      <li><strong>Change User Info:</strong> Log in, click on "Change User Info" button, edit your full name and preferred theme, then click <em>Save</em>. To change your password, fill in your old and new passwords and click <em>Change</em>. The button is visible only if you are logged in and you cant change the full name of the admin.</li>
+    </ul>
+
+  <h2>🧭 Key API Routes (selected):</h2>
+    <ul>
+    <li><strong>GET</strong> /api/products — Retrieve all products (public)</li>
+    <li><strong>POST</strong> /api/products — Create a new product (auth required)</li>
+    <li><strong>DELETE</strong> /api/products/:id — Delete a product (auth required, dynamic, owner/admin only)</li>
+
+    <li><strong>GET</strong> /api/cart — Get cart items (auth required)</li>
+    <li><strong>POST</strong> /api/cart/add — Add item to cart (auth required)</li>
+    <li><strong>POST</strong> /api/cart/remove — Remove item from cart (auth required)</li>
+    <li><strong>POST</strong> /api/cart/clear — Clear all cart items (auth required)</li>
+    <li><strong>POST</strong> /api/cart/update-duration — Update rental days for an item (auth required)</li>
+
+    <li><strong>POST</strong> /api/checkout/pay — Complete purchase and clear cart (auth required)</li>
+
+    <li><strong>GET</strong> /api/purchases — Get all purchases for the logged-in user (auth required)</li>
+
+    <li><strong>GET</strong> /api/users/status — Get login status (public)</li>
+    <li><strong>POST</strong> /api/users/status — Toggle user mode (auth required)</li>
+    <li><strong>POST</strong> /api/users/login — Log in a user (public)</li>
+    <li><strong>POST</strong> /api/users/register — Register a new user (public)</li>
+    <li><strong>POST</strong> /api/users/logout — Log out current user (auth required)</li>
+    <li><strong>GET</strong> /api/users/activity — Get activity log for the logged-in user (auth required)</li>
+
+    <li><strong>GET</strong> /api/admin/activity — Get admin activity log (admin only)</li>
+
+    <li><strong>POST</strong> /api/ai/price-suggest — AI price suggestion based on external web search (auth required)</li>
+
+    <li><strong>GET</strong> /api/stats/my — Get basic user stats (auth required)</li>
+
+    <li><strong>GET</strong> /api/disputes — List disputes related to the logged-in user (auth required)</li>
+    <li><strong>POST</strong> /api/disputes — Open a new dispute (auth required)</li>
+    <li><strong>POST</strong> /api/disputes/:id/reply — Reply in a dispute thread (auth required)</li>
+    <li><strong>POST</strong> /api/disputes/:id/resolve — Resolve a dispute (auth required, owner/admin only)</li>
+
+    <li><strong>GET</strong> /api/account/profile — Get profile details (auth required)</li>
+    <li><strong>POST</strong> /api/account/profile — Update profile details (auth required)</li>
+    <li><strong>POST</strong> /api/account/change-password — Change account password (auth required)</li>
+
+    <li><strong>GET</strong> /readme.html — Serve README page (public)</li>
+    <li><strong>GET</strong> /llm.html — Serve LLM report page (public)</li>
+
+    <li><strong>GET</strong> * — Fallback route serving index.html</li>
+    </ul>
+
+  <h2>⚠️ What was hard to do?</h2>
+  <div class="highlight">
+    Ensuring consistent session handling, syncing cart state across UI and backend, and controlling rental days per item were challenging. 
+    Also, preventing DoS attacks by validating payloads and using rate limits was important. 
+    Integrating external AI search and model output (strict JSON) required careful prompt design and error handling.
+  </div>
+
+  <h2>👤 Who is your partner?</h2>
+  <p>I did it myself ! <br>
+    <strong>Ron Eliav </strong> (ID : 211444997) – individual project.</p>
+
+  <h2>🌐 What routes does the app support?</h2>
+  <pre>
+GET     /api/products
+POST    /api/products
+DELETE  /api/products/:id
+
+GET     /api/cart
+POST    /api/cart/add
+POST    /api/cart/remove
+POST    /api/cart/clear
+POST    /api/cart/update-duration
+
+POST    /api/checkout/pay
+
+GET     /api/purchases
+
+GET     /api/users/status
+POST    /api/users/status
+POST    /api/users/login
+POST    /api/users/register
+POST    /api/users/logout
+GET     /api/users/activity
+
+GET     /api/admin/activity
+
+POST    /api/ai/price-suggest
+
+GET     /api/stats/my
+
+GET     /api/disputes
+POST    /api/disputes
+POST    /api/disputes/:id/reply
+POST    /api/disputes/:id/resolve
+
+GET     /api/account/profile
+POST    /api/account/profile
+POST    /api/account/change-password
+
+GET     /readme.html
+
+GET     /llm.html
+  </pre>
+
+  <h2>🧪 How did you test the app?</h2>
+  <p>
+    Automated testing with <code>test.js</code> using <code>node-fetch</code>.
+    The script prints which tests run and whether they passed, including dynamic routes, cookie rotation, and all new endpoints.
+    Manual testing was also performed through the browser.<br><br>
+    Run the following commands in the RentMate directory to install node-fetch v2 as a dev dependency and execute the test script:<br>
+    <code>>> npm i -D node-fetch@2<br>
+    >> node client/scripts/test.js<br></code>
+  </p>
+</body>
+</html>

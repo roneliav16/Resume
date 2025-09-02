@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Disputes - RentMate</title>
+        <script src="/scripts/disputes.js"></script>
+        <link rel="stylesheet" href="/style/disputes.css" />
+
+    </head>
+<body>
+<a href="/index.html" class="btn-back">⬅ Back to Home</a>   
+  <h1>Dispute Center</h1>
+  <form id="openForm">
+    <label>Product ID:
+        <input name="productId" placeholder="product Id" required>
+    </label>
+
+    <label>Type:
+        <select name="type" id="type">
+        <option value="damage">DAMAGE</option>
+        <option value="delay">DELAY</option>
+    </select>
+    </label>
+
+    <label>Description:
+        <input name="description" placeholder="description">
+    </label>
+    <button>🪄 Open Dispute</button>
+  </form>
+  <h2>My Disputes</h2>
+  <ul id="list"></ul>
+</body>
+</html>

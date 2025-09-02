@@ -1,0 +1,118 @@
+    :root {
+      --bg:#0f1221;
+      --panel:rgba(255,255,255,.06);
+      --border:rgba(255,255,255,.12);
+      --text:#e7ebf3;
+      --muted:#9aa4b2;
+      --brand:#6ea8ff;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(110,168,255,.18), transparent 60%),
+        radial-gradient(1000px 500px at -10% 20%, rgba(138,212,255,.12), transparent 60%),
+        linear-gradient(180deg, #0b0e1a 0%, var(--bg) 60%, var(--bg) 100%);
+      color: var(--text);
+      padding: 24px;
+    }
+
+    h1, h2 {
+      margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+      max-width: 500px;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      font-size: 14px;
+      transition: border-color .2s, background .2s;
+    }
+
+    input:focus, select:focus {
+      border-color: rgba(110,168,255,.5);
+      background: rgba(255,255,255,.08);
+      outline: none;
+    }
+
+    button {
+      background: linear-gradient(135deg, rgba(110,168,255,.25), rgba(138,212,255,.15));
+      border: 1px solid rgba(110,168,255,.35);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, transform .05s;
+      margin-top: 6px;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, rgba(110,168,255,.35), rgba(138,212,255,.25));
+      transform: translateY(-1px);
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    pre#out {
+      background: rgba(0,0,0,.3);
+      border-radius: 8px;
+      padding: 10px;
+      white-space: pre-wrap;
+      font-size: 13px;
+      color: var(--muted);
+      max-width: 500px;
+      overflow-x: auto;
+    }
+
+    
+.btn-back {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6ea8ff, #8ad4ff);
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background 0.2s ease, transform 0.1s ease;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.btn-back:hover {
+  background: linear-gradient(135deg, #5c94e6, #76c8e6);
+  transform: translateY(-2px);
+}
+.btn-back:active {
+  transform: translateY(1px);
+}

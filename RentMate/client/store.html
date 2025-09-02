@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>store.html</title>
+        <link rel="stylesheet" href="/style/store-style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+        <script src="scripts/UI-Preferences.js" defer></script>
+        <script src="/scripts/logout.js" defer></script>
+        <script src="/scripts/cartActionsInShop.js" defer></script>
+    </head>
+    <body>
+        <button id="logoutBtn" class="logout-btn" style="display: none;">🚪Logout</button>
+        <button id="toggleThemeBtn">🌙 Dark Mode</button>
+
+        <header>
+            <h1>Store Page</h1>
+            <p>Welcome to the RentMate Store! Here you can browse and rent items.</p>
+        </header>
+
+        <section class="button-group">
+            <button id="addItemBtn" class="button-link">➕Add New Item</button>
+            <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+            <button onclick="window.location.href='cart.html'" class="button-link">🛒View Cart</button>
+            <button id="clearCartBtn">🗑️Clear All Items</button>
+        </section>
+
+        <form id="addItemForm" style="display: none;">
+            <label>
+                Title:
+                <input type="text" id="itemTitle" required />
+            </label><br />
+            <label>
+                Description:
+                <input type="text" id="itemDescription" required />
+            </label><br />
+            <label>
+                Price (per day):
+                <input type="number" id="itemPrice" min="0" required />
+            </label><br />
+            <label>
+                Image URL or File Path:
+                <input type="text" id="itemImage">
+            </label><br />
+            <label>
+                Stock:
+                <input type="number" id="itemStock" required />
+            </label><br />
+            <label>
+                Max Rental Days:
+                <input type="number" id="itemRentalDays" min="1" step="1" required />
+            </label><br />
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search products..." />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <section id="item-list">
+            <!-- Items will be dynamically loaded here -->
+        </section>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LLM Assistance Overview</title>
+  <link rel="stylesheet" href="/style/index-style.css"/>
+  <link rel="stylesheet" href="/style/llm.css" />
+</head>
+<body>
+  <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+  <main class="container">
+    <h1>LLM Assistance Overview</h1>
+
+    <section>
+      <p>
+        During development I used an LLM (e.g., ChatGPT) in a supportive way.
+        It helped accelerate ideation, polish, and validation of approaches.
+        Core design and implementation decisions remained mine.
+      </p>
+    </section>
+
+    <section>
+      <h2>How the LLM Was Used</h2>
+      <ul>
+        <li><strong>RentMate AI:</strong> Prompt crafting for robust JSON-only output, integrating an external web search provider with a generative model, and handling edge cases/fallbacks when API keys are missing.</li>
+        <li><strong>Stats:</strong> Choosing a lightweight charting approach (Chart.js) and shaping a compact API response structure for client rendering.</li>
+        <li><strong>Dispute Center:</strong> Structuring a simple dispute schema (open/reply/resolve), basic validation for inputs, and secure UI rendering of messages.</li>
+        <li><strong>Testing (test.js):</strong> Designing an end-to-end flow that prints each test step, maintains cookies across requests (including session rotation), and covers all dynamic routes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Was Not Delegated</h2>
+      <ul>
+        <li>Core server logic, route structure, and data flow between modules.</li>
+        <li>Session handling, cookies, and per-user cart/purchases persistence.</li>
+        <li>Product/cart/checkout features and their validations.</li>
+        <li>Security hardening and error handling across modules.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Notes</h2>
+      <p class="note">
+        The LLM provided guidance, reviews, and suggestions. I integrated these selectively,
+        adapting them to my project's constraints and data structures.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

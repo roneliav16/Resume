@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rental Stats</title>
+  <link rel="stylesheet" href="style/stats.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="scripts/stats.js" defer></script>
+</head>
+<body>
+  <a href="/index.html" class="btn-back">⬅ Back to Home</a>   
+  <header>
+    <h1>My Rental Stats</h1>
+    <p class="muted">Overview of your activity in RentMate</p>
+  </header>
+
+  <section class="cards" id="cards"></section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Most Popular Of Mine</h2>
+      <span class="muted" id="popularMeta"></span>
+    </div>
+    <div id="popularBox" class="popular"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Price Distribution (My Purchases)</h2>
+    </div>
+    <canvas id="priceChart" height="140"></canvas>
+  </section>
+</body>
+</html>

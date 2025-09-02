@@ -1,0 +1,97 @@
+[
+  {
+    "datetime": "2025-08-09T21:57:27.093Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-09T21:59:51.555Z",
+    "username": "ron",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-09T21:59:56.394Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-09T21:59:59.415Z",
+    "username": "admin",
+    "type": "add item to cart"
+  },
+  {
+    "datetime": "2025-08-09T21:59:59.540Z",
+    "username": "admin",
+    "type": "remove item from cart"
+  },
+  {
+    "datetime": "2025-08-09T21:59:59.936Z",
+    "username": "admin",
+    "type": "add item to cart"
+  },
+  {
+    "datetime": "2025-08-09T22:00:01.267Z",
+    "username": "admin",
+    "type": "clear all items from cart"
+  },
+  {
+    "datetime": "2025-08-09T22:00:26.635Z",
+    "username": "ron",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-09T22:00:33.054Z",
+    "username": "ron",
+    "type": "add item to cart"
+  },
+  {
+    "datetime": "2025-08-09T22:00:50.431Z",
+    "username": "ron",
+    "type": "add item to cart"
+  },
+  {
+    "datetime": "2025-08-09T22:00:50.933Z",
+    "username": "ron",
+    "type": "add item to cart"
+  },
+  {
+    "datetime": "2025-08-09T22:03:10.546Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-09T23:38:37.625Z",
+    "username": "ron",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T06:19:21.919Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T07:14:34.302Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T11:38:17.811Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T11:52:02.575Z",
+    "username": "admin",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T12:34:59.099Z",
+    "username": "ron",
+    "type": "login"
+  },
+  {
+    "datetime": "2025-08-28T15:19:29.700Z",
+    "username": "admin",
+    "type": "login"
+  }
+]

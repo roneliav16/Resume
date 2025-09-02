@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - RentMate</title>
+  <link rel="stylesheet" href="./style/checkout-style.css" />
+  <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+  <script src="scripts/UI-Preferences.js" defer></script>
+  <script src="./scripts/checkout.js" defer></script>
+</head>
+<body>
+  <button id="toggleThemeBtn">🌙 Dark Mode</button>
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+    <p>Review your rental items before confirming your order.</p>
+
+    <div id="checkout-items">
+      <!-- Items will be added here -->
+    </div>
+
+    <div class="summary">
+      <p id="total-price">Total: $0</p>
+      <button id="confirmBtn">💳Confirm Rental</button>
+      <button onclick="window.location.href='cart.html'" class="back-btn">🛒Back to Cart</button>
+      <button onclick="window.location.href='store.html'" class="back-btn">🔙Back to Store</button>
+    </div>
+  </div>
+</body>
+</html>

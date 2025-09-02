@@ -1,0 +1,83 @@
+<!-- client/ai.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RentMate AI — Price Suggestion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Base site styles -->
+  <link rel="stylesheet" href="/style/index-style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="/style/ai.css" />
+  <!-- Your client logic -->
+  <script src="/scripts/ai.js" defer></script>
+</head>
+<body>
+  <a href="/index.html" class="btn-back">⬅ Back to Home</a>
+  <main class="ai-shell">
+    <!-- Header / Brand -->
+    <header class="ai-header" role="banner" aria-label="RentMate AI">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">💬</div>
+        <div class="brand-text">
+          <h1>RentMate <span>AI</span></h1>
+          <p class="subtitle">Smart pricing assistant</p>
+        </div>
+      </div>
+      <div class="status-pill" id="aiStatus" aria-live="polite">Ready</div>
+    </header>
+
+    <!-- Chat container (single scroll area) -->
+    <section class="chat" id="chat" aria-live="polite" aria-label="Conversation">
+      <!-- Starter assistant message -->
+      <article class="msg bot" id="welcome-msg">
+        <div class="avatar" aria-hidden="true">🤖</div>
+        <div class="bubble">
+          <p>Hi! Tell me about your item and I’ll suggest an optimal <strong>daily rental price</strong>, with confidence and a short rationale.</p>
+          <p class="hint">Provide a clear title and a short description for best results.</p>
+        </div>
+      </article>
+
+      <!-- Stream where JS appends messages (user + bot) -->
+      <div id="aiResult" class="stream" data-empty="true"></div>
+    </section>
+
+    <!-- Composer -->
+    <section class="composer" aria-label="Price prompt">
+      <form id="aiForm" class="composer-form" autocomplete="off">
+        <div class="grid">
+          <label class="input-wrap" title="Item title">
+            <span class="label">Title *</span>
+            <input name="title" placeholder="e.g., GoPro HERO 11" required />
+          </label>
+
+          <label class="input-wrap" title="Your price idea">
+            <span class="label">Your price idea *</span>
+            <input name="basePrice" type="number" min="1" step="1" placeholder="e.g., 50" required />
+          </label>
+
+          <label class="input-wrap" title="Rental days">
+            <span class="label">Rental days *</span>
+            <input name="rentalDays" type="number" min="1" step="1" value="1" required />
+          </label>
+        </div>
+
+        <label class="input-wrap full" title="Short description">
+          <span class="label">Description</span>
+          <textarea name="description" rows="3" placeholder="Condition, accessories, brand, model, etc."></textarea>
+        </label>
+
+        <div class="actions">
+          <button class="btn primary" type="submit" aria-label="Suggest price">Suggest</button>
+          <button class="btn ghost" type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ai-footer">
+      <small>© 2025 RentMate. Powered by RentMate AI.</small>
+    </footer>
+  </main>
+</body>
+</html>

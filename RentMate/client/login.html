@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - RentMate</title>
+  <link rel="stylesheet" href="./style/auth-style.css" />
+  <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+  <script src="scripts/UI-Preferences.js" defer></script>
+  <script src="scripts/login.js" defer></script>
+</head>
+<body>
+  <button id="toggleThemeBtn">🌙 Dark Mode</button>
+  <h1>Login to RentMate</h1>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+    <br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+    <br />
+    <label>
+      <input type="checkbox" id="rememberMe" /> Remember Me
+    </label>
+    <br />
+    <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="register.html">📝Register here</a></p>
+  <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+</body>
+</html>

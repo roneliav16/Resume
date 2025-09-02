@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - RentMate</title>
+  <link rel="stylesheet" href="./style/auth-style.css" />
+  <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+  <script src="scripts/UI-Preferences.js" defer></script>
+  <script src="register.js" defer></script>
+</head>
+<body>
+  <button id="toggleThemeBtn">🌙 Dark Mode</button>
+  <h1>Register for RentMate</h1>
+
+  <form id="register-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+    <span class="field-note">At least 3 characters, English letters and numbers, not only digits</span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+    <span class="field-note">At least 4 characters, English letters and numbers, not only digits</span>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required />
+    <span class="field-note">At least 2 characters, only letters and spaces</span>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already have an account? <a href="login.html">🔐Login here</a></p>
+  <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+</body>
+</html>

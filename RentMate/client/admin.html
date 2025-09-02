@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard -RentMate</title>
+  <link rel="stylesheet" href="style/admin.css" />
+  <link rel="stylesheet" href="/style/UI-Preferences.css"/>
+  <script src="scripts/UI-Preferences.js" defer></script>
+  <script src="scripts/admin.js" defer></script>
+</head>
+<body>
+    <button onclick="window.location.href='index.html'" class="button-link">🏠Back To Home Page</button>
+    <button class="modeBtn" id="toggleThemeBtn">🌙 Dark Mode</button>
+  <div class="admin-container">
+    <h1>📊 Admin Activity Dashboard</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-box">
+      <label for="usernameFilter">Filter by username prefix:</label>
+      <input type="text" id="usernameFilter" placeholder="Type prefix..." />
+    </div>
+
+    <!-- Activity Table -->
+    <table id="activityTable">
+      <thead>
+        <tr>
+          <th>Date & Time</th>
+          <th>Username</th>
+          <th>Type of Activity</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Manage Products Section -->
+    <div class="manage-products">
+      <h2>🛠 Manage Products</h2>
+      <p>Add new products to the store:</p>
+
+      <form id="productForm">
+        <label>
+          Title:
+          <input type="text" id="itemTitle"  required />
+        </label><br />
+        <label>
+          Description:
+          <input type="text" id="itemDescription"  required />
+        </label><br />
+        <label>
+          Price (per day):
+          <input type="number" id="itemPrice" min="0" required />
+        </label><br />
+        <label>
+          Image URL or File Path:
+          <input type="text" id="itemImage"  />
+        </label><br />
+        <label>
+          Stock:
+          <input type="number" id="itemStock" required />
+        </label><br />
+        <label>
+          Max Rental Days:
+          <input type="number" id="itemRentalDays" min="1" step="1" required />
+        </label><br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <ul id="productList"></ul>
+    </div>
+  </div>
+</body>
+</html>

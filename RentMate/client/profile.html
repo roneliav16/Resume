@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style/profile.css"/>
+  <script src="scripts/profile.js" defer></script>
+</head>
+<body>
+  <a href="/index.html" class="btn-back">⬅ Back to Home</a>
+  <h1>My Profile</h1>
+  <div class="card">
+    <label>Full name:
+      <input id="fullName" placeholder="Your full name">
+    </label>
+    <label>Theme:
+      <select id="mode">
+        <option>light</option>
+        <option>dark</option>
+      </select>
+    </label>
+    <button id="save">Save</button>
+  </div>
+
+  <h2>Change Password</h2>
+  <div class="card">
+    <label>
+      <input id="oldPassword" type="password" placeholder="Old password">
+    </label>
+    <label>
+      <input id="newPassword" type="password" placeholder="New password">
+    </label>
+    <button id="changePwd">Change</button>
+  </div>
+
+  <pre id="out"></pre>
+
+  <script src="/js/profile.js"></script>
+</body>
+</html>

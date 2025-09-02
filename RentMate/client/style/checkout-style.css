@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: white;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.checkout-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  backdrop-filter: blur(6px);
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#checkout-items {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary {
+  text-align: center;
+}
+
+#total-price {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#confirmBtn {
+  background-color: #27ae60;
+  color: white;
+}
+
+#confirmBtn:hover {
+  transform: scale(1.05);
+  background-color: #1e8449;
+}
+
+.back-btn {
+  background-color: #f39c12;
+  color: black;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  background-color: #e67e22;
+}
+
+/* A small controls bar above the items (replaces inline styles) */
+.select-controls {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: .5rem 0 1rem;
+}
+
+/* Make checkboxes clearer and consistent with your brand color */
+input[type="checkbox"].item-select,
+#selectAll {
+  width: 18px;
+  height: 18px;
+  accent-color: #27ae60; /* matches your Confirm button */
+}
+
+/* Better click target + layout consistency */
+.item {
+  display: flex;                /* you already had this – keep */
+  justify-content: space-between;
+  align-items: center;          /* NEW: vertically center content */
+  gap: .6rem;                   /* NEW: spacing between columns */
+}
+
+.item label {
+  cursor: pointer;              /* click anywhere on the label */
+}
+
+.item .price {
+  font-variant-numeric: tabular-nums; /* nicer aligned numbers */
+}
+
+/* Visible focus for keyboard users */
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Disabled state (if you decide to disable the button when nothing selected) */
+button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+body.dark-mode .item label span {
+  color: #f5f5f5;
+}

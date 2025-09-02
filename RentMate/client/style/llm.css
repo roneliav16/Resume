@@ -1,0 +1,88 @@
+
+:root {
+  --bg1: #f6f8fb;
+  --text: #1f2a44;
+  --muted: #5c6b82;
+  --accent: #2a5298;
+  --card: #ffffff;
+  --shadow: 0 10px 30px rgba(17, 23, 41, 0.08);
+  --radius: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    padding: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 48px auto;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 28px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+  color: var(--accent);
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  margin: 28px 0 10px;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+p {
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 8px 0 18px 20px;
+  padding: 0;
+  color: var(--text);
+}
+
+li {
+  margin: 6px 0;
+}
+
+code {
+  background: #eef2ff;
+  color: #27306a;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.95em;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: #f4f7ff;
+  border: 1px solid #e2e8ff;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
