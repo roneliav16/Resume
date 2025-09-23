@@ -2,11 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('#github-projects .projects-list');
   if (!list) return;
 
-  // 1) עטיפה אוטומטית לוידאו מקומי (MP4) או iframes, אם הדבקת אותם בלי wrapper
+  // 1) לעטוף וידאו/iframe ב-video-wrap אם לא עטוף
   list.querySelectorAll('li').forEach(li => {
-    // find existing <video> or <iframe> not wrapped
-    const vids = li.querySelectorAll('video, iframe');
-    vids.forEach(el => {
+    li.querySelectorAll('video, iframe').forEach(el => {
       if (!el.closest('.video-wrap')) {
         const wrap = document.createElement('div');
         wrap.className = 'video-wrap';
@@ -16,15 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 2) הפיכת טקסטי URL חשופים ללינקים (למשל בסוף תיאור RentMate)
+  // 2) להפוך כתובות חשופות ללינקים (לא נוגע בקישורים שכבר עטופים ב-<a>)
   list.querySelectorAll('li').forEach(li => {
-    li.innerHTML = li.innerHTML.replace(
-      /(https?:\/\/[^\s<]+)/g,
-      (m) => {
-        // אם כבר עטוף ב-<a> תשאיר כמו שהוא
-        if (/<a\s[^>]*>.*<\/a>/i.test(m)) return m;
-        return `<a href="${m}" target="_blank" rel="noopener">${m}</a>`;
+    // נבצע החלפה רק בטקסטים בסיסיים כדי לא לשבור HTML קיים:
+    // נחליף כתובות חשופות שלא כבר בתוך תגית <a>
+    const walker = document.createTreeWalker(li, NodeFilter.SHOW_TEXT, null);
+    const texts = [];
+    while (walker.nextNode()) texts.push(walker.currentNode);
+
+    texts.forEach(node => {
+      const txt = node.nodeValue;
+      if (!txt) return;
+      const replaced = txt.replace(/(https?:\/\/[^\s<]+)/g, url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`);
+      if (replaced !== txt) {
+        const span = document.createElement('span');
+        span.innerHTML = replaced;
+        node.parentNode.replaceChild(span, node);
       }
-    );
+    });
   });
 });
