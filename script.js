@@ -66,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const actions = li.querySelector('.project-actions') || li.appendChild(Object.assign(document.createElement('div'), {className: 'project-actions'}));
         actions.appendChild(btn);
       }
+
+      // Clicking the video itself opens lightbox
+      if(el.tagName.toLowerCase()==='video'){
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', () => openLightbox(el.currentSrc || el.src));
+      }
     });
   });
 
@@ -150,4 +156,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6) Expand button
+  // 6) Expand button (scrolls to item; if יש וידאו — פותח לייטבוקס מיד)
+  list.querySelectorAll('.btn-expand').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sel = btn.getAttribute('data-target');
+      const target = sel ? document.querySelector(sel) : btn.closest('li');
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      const vid = target.querySelector('video');
+      if(vid && (vid.currentSrc || vid.src)){
+        setTimeout(()=> openLightbox(vid.currentSrc || vid.src), 250);
+      }
+    });
+  });
+});
+
+// --- Lightbox for local videos ---
+function openLightbox(src){
+  const dlg = document.getElementById('lightbox');
+  const body = dlg?.querySelector('.lightbox__body');
+  const closeBtn = dlg?.querySelector('.lightbox__close');
+  if(!dlg || !body) return;
+
+  body.innerHTML = '';
+  const vid = document.createElement('video');
+  vid.src = src;
+  vid.controls = true;
+  vid.autoplay = true;
+  vid.style.width = '100%';
+  body.appendChild(vid);
+
+  dlg.showModal();
+
+  function onClose(){
+    vid.pause?.();
+    dlg.close();
+    body.innerHTML = '';
+    closeBtn?.removeEventListener('click', onClose);
+    dlg.removeEventListener('click', onBackdrop);
+    document.removeEventListener('keydown', onEsc);
+  }
+  function onBackdrop(e){
+    if(e.target === dlg) onClose();
+  }
+  function onEsc(e){
+    if(e.key === 'Escape') onClose();
+  }
+
+  closeBtn?.addEventListener('click', onClose);
+  dlg.addEventListener('click', onBackdrop);
+  document.addEventListener('keydown', onEsc);
+}
+
+// --- Small helper: button flash feedback ---
+function flash(el, text='Done'){
+  if(!el) return;
+  const old = el.textContent;
+  el.disabled = true;
+  el.textContent = text;
+  setTimeout(()=>{
+    el.textContent = old;
+    el.disabled = false;
+  }, 1200);
+}
