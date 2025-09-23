@@ -42,7 +42,7 @@ body {
 .section { margin-bottom: 40px; }
 .section h2 { font-size: 28px; margin-bottom: 12px; }
 
-/* ===== Projects list as cards (single column) ===== */
+/* ===== Projects list as big single-column cards ===== */
 #github-projects .projects-list {
   list-style: none;
   padding: 0;
@@ -50,9 +50,8 @@ body {
   display: grid;
   gap: 24px;
   grid-template-columns: 1fr; /* one column */
-  border-left: none; /* override any previous rule */
+  border-left: none;
 }
-
 #github-projects .projects-list li {
   background: var(--card);
   border: 1px solid var(--line);
@@ -61,13 +60,11 @@ body {
   box-shadow: var(--shadow);
   line-height: 1.7;
 }
-
 #github-projects .projects-list li > strong {
   display: block;
   font-size: 1.05rem;
   margin-bottom: 6px;
 }
-
 #github-projects .projects-list a { color: inherit; }
 #github-projects .projects-list em,
 #github-projects .projects-list strong { font-weight: 600; }
@@ -79,7 +76,6 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
 }
-
 .project-actions a {
   display: inline-flex;
   align-items: center;
@@ -92,7 +88,6 @@ body {
   background: var(--ghost);
   color: inherit;
 }
-
 .project-actions a.primary {
   background: var(--brand);
   color: #fff;
@@ -109,7 +104,6 @@ body {
   background: #000;
   margin-top: 12px;
 }
-
 .video-wrap iframe,
 .video-wrap video {
   position: absolute;
@@ -120,26 +114,6 @@ body {
 
 /* ===== Footer ===== */
 .footer { text-align: center; margin-top: 40px; color: var(--muted); }
-
-/* ===== Accessibility: skip link (optional if you add it) ===== */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip-link:focus {
-  left: 12px;
-  top: 12px;
-  width: auto;
-  height: auto;
-  padding: 8px 12px;
-  background: #000;
-  color: #fff;
-  z-index: 999;
-}
 
 /* ===== Mobile tweaks ===== */
 @media (max-width: 520px) {
