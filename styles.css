@@ -1,37 +1,59 @@
-/* Base */
-:root{
-  --bg:#f5f7fb; --panel:#fff; --card:#fff;
-  --text:#0a1020; --muted:#4a5775; --line:#dde3f1;
-  --brand:#2458ff; --accent:#03b5a5; --ghost:#eef2fb;
+/* ===== Base ===== */
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --card: #ffffff;
+  --text: #0a1020;
+  --muted: #4a5775;
+  --line: #dde3f1;
+  --brand: #2458ff;
+  --accent: #03b5a5;
+  --ghost: #eef2fb;
   --shadow: 0 12px 30px rgba(0,0,0,.09), 0 0 0 1px rgba(0,0,0,.04) inset;
-  --radius:20px;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0; font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
-  background:var(--bg); color:var(--text);
-}
-.container{max-width:900px; margin:0 auto; padding:24px}
-
-/* Header (kept from your original styling idea) */
-.header{ text-align:center; margin-bottom: 32px; }
-.header h1{ font-size: 36px; margin: 0 0 6px; }
-.btn-github{
-  display:inline-block; margin-top:12px; padding:10px 18px; background:var(--brand); color:#fff;
-  text-decoration:none; border-radius:999px; font-weight:600;
+  --radius: 20px;
 }
 
-/* Sections */
-.section{ margin-bottom: 40px; }
-.section h2{ font-size: 28px; margin-bottom: 12px; }
-
-/* Project list as big single-column cards */
-#github-projects .projects-list{
-  list-style:none; padding:0; margin:0;
-  display:grid; gap:24px; grid-template-columns: 1fr;
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
-#github-projects .projects-list li{
+
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+
+/* ===== Header ===== */
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 36px; margin: 0 0 6px; }
+.btn-github {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ===== Sections ===== */
+.section { margin-bottom: 40px; }
+.section h2 { font-size: 28px; margin-bottom: 12px; }
+
+/* ===== Projects list as cards (single column) ===== */
+#github-projects .projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr; /* one column */
+  border-left: none; /* override any previous rule */
+}
+
+#github-projects .projects-list li {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -39,37 +61,88 @@ body{
   box-shadow: var(--shadow);
   line-height: 1.7;
 }
-#github-projects .projects-list li > strong{
-  display:block; font-size: 1.05rem; margin-bottom: 6px;
-}
-#github-projects .projects-list a{ color: inherit; }
-#github-projects .projects-list em, #github-projects .projects-list strong{ font-weight: 600; }
 
-/* Optional buttons under a project (if you add them) */
-.project-actions{
-  display:flex; gap:8px; flex-wrap:wrap; margin-top: 10px;
-}
-.project-actions a{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:8px 12px; border-radius:999px; text-decoration:none; font-size:.9rem;
-  border:1px solid var(--line); background:var(--ghost); color:inherit;
-}
-.project-actions a.primary{ background: var(--brand); color:#fff; border-color: transparent; }
-
-/* Responsive video (You can drop <video> or <iframe> inside) */
-.video-wrap{
-  position: relative; width: 100%; padding-top: 56.25%;
-  border-radius: 12px; overflow: hidden; background: #000; margin-top: 12px;
-}
-.video-wrap iframe, .video-wrap video{
-  position:absolute; inset:0; width:100%; height:100%;
+#github-projects .projects-list li > strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
 }
 
-/* Footer */
-.footer{ text-align:center; margin-top: 40px; color: var(--muted); }
+#github-projects .projects-list a { color: inherit; }
+#github-projects .projects-list em,
+#github-projects .projects-list strong { font-weight: 600; }
 
-/* Mobile tweaks */
-@media (max-width: 520px){
-  .header h1{ font-size: 30px; }
-  #github-projects .projects-list li{ padding: 18px; }
+/* ===== Optional buttons row ===== */
+.project-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .9rem;
+  border: 1px solid var(--line);
+  background: var(--ghost);
+  color: inherit;
+}
+
+.project-actions a.primary {
+  background: var(--brand);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* ===== Responsive video wrapper ===== */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  margin-top: 12px;
+}
+
+.video-wrap iframe,
+.video-wrap video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== Footer ===== */
+.footer { text-align: center; margin-top: 40px; color: var(--muted); }
+
+/* ===== Accessibility: skip link (optional if you add it) ===== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  z-index: 999;
+}
+
+/* ===== Mobile tweaks ===== */
+@media (max-width: 520px) {
+  .header h1 { font-size: 30px; }
+  #github-projects .projects-list li { padding: 18px; }
 }
