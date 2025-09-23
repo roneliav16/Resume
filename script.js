@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('#github-projects .projects-list');
-  if (!list) return;
+  if (!list) return; 
 
   // 1) לעטוף וידאו/iframe ב-video-wrap אם לא עטוף
   list.querySelectorAll('li').forEach(li => {
@@ -34,3 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
