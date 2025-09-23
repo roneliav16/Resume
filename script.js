@@ -1,5 +1,5 @@
-/* We render full original text (exactly as in your initial HTML).
-   For rich text & line breaks we use innerHTML. */
+/* Renders the original long texts exactly as in your HTML using innerHTML. */
+/* Add/modify only inside PROJECTS to control content. */
 
 const PROJECTS = [
   {
@@ -7,7 +7,6 @@ const PROJECTS = [
     title: "Full Stack Project – RentMate (2025):",
     category: "fullstack",
     badge: "Full-Stack",
-    // Full original sentence (kept) with bold and link at end
     desc: `Developed an online rental marketplace with user registration/login, cart, checkout, and purchase history (disk persistence). Extended functionality: <strong>RentMate AI</strong> - price suggestions in AI Chat Box for current optimal price (using Gemini and Tavily), user stats, dispute center, profile management, an admin panel, DoS protection, and automated testing using node-fetch. <a href="https://rentmate-lweq.onrender.com/index.html" target="_blank" rel="noopener">https://rentmate-lweq.onrender.com/index.html</a>`,
     repo: "https://github.com/roneliav16/RentMate",
     demo: "https://rentmate-lweq.onrender.com/index.html",
@@ -15,6 +14,8 @@ const PROJECTS = [
     tags: ["Node.js","Express","HTML/CSS/JS","AI","Testing"],
     bullets: []
   },
+
+  /* ---------- Operating Systems ---------- */
   {
     id: "os-ex1",
     title: "Operating Systems – Exercise 1:",
@@ -47,6 +48,8 @@ const PROJECTS = [
     desc: `Developed a modular multithreaded string-processing pipeline in C, with dynamically loaded plugins (e.g., uppercaser, flipper, logger). Implemented thread-safe producer–consumer queues, synchronization mechanisms, and clean shutdown via dynamic linking.`,
     repo: "", demo: "", video: "", tags: ["C","Plugins","Queues"], bullets: []
   },
+
+  /* ---------- Machine Learning (one combined line as requested) ---------- */
   {
     id: "ml",
     title: "Machine Learning from Data:",
@@ -55,12 +58,13 @@ const PROJECTS = [
     desc: `5 Full projects including: Implemented decision trees with pruning, logistic regression with gradient descent, Poisson MLE estimations, and k-means clustering for image segmentation.`,
     repo: "", demo: "", video: "", tags: ["Python","ML"], bullets: []
   },
+
+  /* ---------- Digital Systems (Nand2Tetris) – long, multi-line ---------- */
   {
     id: "digital",
     title: "Digital System (Nand2Tetris):",
     category: "digital",
     badge: "Digital",
-    // Keep the exact long, multi-line content with <br> breaks
     desc: `Project 1 – Implemented elementary logic gates (NAND, AND, OR, XOR, MUX, DMUX).<br>
            Project 2 – Built adders and a basic ALU.<br>
            Project 3 – Implemented memory chips (DFF, registers, RAM, counters).<br>
@@ -74,12 +78,13 @@ const PROJECTS = [
            Project 11 – Planned OS libraries in Jack (Math, Memory, Screen, Keyboard) but not completed.`,
     repo: "", demo: "", video: "", tags: ["HDL","Assembler","VM","Jack"], bullets: []
   },
+
+  /* ---------- C# OOP (.NET) – long, multi-line with <br> ---------- */
   {
     id: "csharp",
     title: "OOP in .NET (C#):",
     category: "csharp",
     badge: "C#",
-    // Keep your original lines and bolds
     desc: `Exercise 1 – Assemblies & MSIL Exploration: Investigated .NET assemblies using ildasm, explored PE structure, MSIL code, and metadata. Practiced code inspection and analysis of managed code.<br>
            <br>
            Exercise 2 – Bulls & Cows Game: Implemented the classic logic game <em>Bulls and Cows</em> in a console app, using OOP principles, arrays/collections, and external DLL utilities for screen handling.<br>
@@ -91,6 +96,8 @@ const PROJECTS = [
            Exercise 5 – Bulls & Cows (WinForms): Extended the Bulls & Cows game to a <strong>Windows Forms GUI</strong>, practicing event-driven programming, UI controls, and separation between game logic and presentation.`,
     repo: "", demo: "", video: "", tags: ["C#",".NET","OOP","WinForms"], bullets: []
   },
+
+  /* ---------- High-school & Data Structures items ---------- */
   {
     id: "fun-run",
     title: "Fun Run game (2017):",
@@ -130,9 +137,10 @@ const PROJECTS = [
     badge: "Java",
     desc: `File folder of projects of Introduction to Computer Science course at Reichman University. These are projects 5-9 that we were asked to write in the course. They are of increasing difficulty, so that work 9 incorporates characteristics of a small CHATGPT.`,
     repo: "", demo: "", video: "", tags: ["Java"], bullets: []
-  }
+  },
 ];
 
+/* ---- Renderer & UI logic (unchanged except innerHTML for desc) ---- */
 const qs = (s,el=document)=>el.querySelector(s);
 function createTag(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt)e.textContent=txt;return e;}
 
@@ -141,32 +149,26 @@ function renderProjects(list){
   list.forEach(p=>{
     const li=tpl.content.firstElementChild.cloneNode(true);
 
-    // title + main link
+    // Title & main link (prefer demo, else repo)
     const a=qs('.card__link',li);
     a.textContent=p.title;
     a.href=p.demo || p.repo || '#';
 
-    // badge
+    // Badge & description (use innerHTML to keep <br>/<em>/<strong>/links)
     qs('.badge',li).textContent=p.badge || p.category;
+    qs('.card__desc',li).innerHTML = p.desc;
 
-    // description (preserve original HTML with <br>, <em>, <strong>, links)
-    const descEl = qs('.card__desc', li);
-    descEl.innerHTML = p.desc;
+    // Tags
+    const tags=qs('.tags',li); (p.tags||[]).forEach(t=>tags.appendChild(createTag('li',null,t)));
 
-    // tags
-    const tags=qs('.tags',li);
-    (p.tags||[]).forEach(t=>tags.appendChild(createTag('li',null,t)));
-
-    // actions
+    // Actions
     const repoBtn=qs('.repo',li); if(p.repo){repoBtn.href=p.repo; repoBtn.hidden=false;}
     const demoBtn=qs('.demo',li); if(p.demo){demoBtn.href=p.demo; demoBtn.hidden=false;}
 
-    // bullets (optional)
-    const bullets=qs('.bullets',li);
-    (p.bullets||[]).forEach(b=>bullets.appendChild(createTag('li',null,b)));
-
-    // video placeholder visible only if provided
-    if(p.video){const vw=qs('.video-wrap',li);vw.hidden=false;}
+    // Optional bullets / video (currently unused for your long texts)
+    // Left here in case you add later
+    // const bullets=qs('.bullets',li);
+    // (p.bullets||[]).forEach(b=>bullets.appendChild(createTag('li',null,b)));
 
     li.id=p.id;
     ul.appendChild(li);
