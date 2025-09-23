@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron Eliav - Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ron Eliav — Software Developer</title>
+  <meta name="description" content="Portfolio of Ron Eliav: Full-Stack, Operating Systems, ML, Digital Systems (Nand2Tetris), and C# OOP projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <h1>Ron Eliav</h1>
-            <p>Software Developer</p>
-            <p>Email: <a href="mailto:roneliav16@gmail.com">roneliav16@gmail.com</a></p>
-            <p>Location: Igal Yadin 35, Modi'in</p>
-            <p>Phone: <a href="tel:+972549719759">+972-54-971-9759</a></p>
-            <p>
-                <a class="btn-github" href="https://www.linkedin.com/in/ron-eliav-6892452a5/" target="_blank">LinkedIn</a>
-                <a class="btn-github" href="https://roneliav16.github.io/Resume/" target="_blank">Portfolio</a>
-            </p>
-            <p><a href="#github-projects" class="btn-github">Projects</a></p>
-        </header>
+  <a class="skip-link" href="#projects">Skip to projects</a>
 
-        <!-- Introduction Section (updated) -->
-        <section class="section">
-            <p>
-                Third-year Computer Science student (overall GPA 96.22; Dean’s List in both first and second year).
-                Currently a QA Automation Engineer at DealHub.io. I combine rigorous academic training with leadership and
-                management experience from military service, bringing a blend of technical depth and strong organizational
-                skills. Proficient in Java, Python, C, C#, Assembly/HDL, JavaScript, HTML/CSS, SQL, Bash; experienced in
-                Machine Learning, Full-Stack development, Algorithms, Data Structures, VM language, and Git. I’m eager to
-                take on challenging engineering roles and deliver impactful solutions.
-            </p>
-        </section>
-
-        <!-- GitHub Projects Section (kept) -->
-        <section id="github-projects" class="section">
-            <h2>Explanations of GitHub projects:</h2>
-            <ul>
-                <li><strong><a href="https://rentmate-lweq.onrender.com/index.html" target="_blank">Full Stack Project – RentMate (2025):</a></strong> Developed an online rental marketplace with user registration/login, cart, checkout, and purchase history (disk persistence). Extended functionality:  <strong>RentMate AI </strong>- price suggestions in AI Chat Box for current optimal price (using Gemini and Tavily), user stats, dispute center, profile management, an admin panel, DoS protection, and automated testing using node-fetch. https://rentmate-lweq.onrender.com/index.html</li>
-                <li><strong>Operating Systems – Exercise 1:</strong> Implemented core synchronization primitives in C, including semaphores (TAS & Ticket Lock), condition variables, read–write locks, thread-local storage, and a producer–consumer system.</li>
-                <li><strong>Operating Systems – Exercise 2:</strong> Built a user-level threading library in C using round-robin scheduling, context switching with sigsetjmp/siglongjmp, virtual timer interrupts, and thread control blocks.</li>
-                <li><strong>Operating Systems – Exercise 3:</strong> Designed and implemented a simple block-based filesystem ("OnlyFiles") in C, supporting file creation, deletion, read/write, and metadata management on a 10MB virtual disk.</li>
-                <li><strong>Operating Systems – Final Project:</strong> Developed a modular multithreaded string-processing pipeline in C, with dynamically loaded plugins (e.g., uppercaser, flipper, logger). Implemented thread-safe producer–consumer queues, synchronization mechanisms, and clean shutdown via dynamic linking.</li>
-                <li><strong>Machine Learning from Data:</strong> 5 Full projects including: Implemented decision trees with pruning, logistic regression with gradient descent, Poisson MLE estimations, and k-means clustering for image segmentation.</li>
-                <li><strong>Digital System (Nand2Tetris):</strong> Project 1 – Implemented elementary logic gates (NAND, AND, OR, XOR, MUX, DMUX).<br> Project 2 – Built adders and a basic ALU.<br> Project 3 – Implemented memory chips (DFF, registers, RAM, counters).<br> Project 4 – Wrote Hack assembly programs (multiplication, drawing, loops).<br> Project 5 – Built the Hack CPU (ALU + registers + program counter).<br> Project 6 – Developed an assembler to translate Hack assembly into binary machine code.<br> Project 7 – VM Translator I (stack arithmetic: push/pop, arithmetic, logic).<br> Project 8 – VM Translator II (control flow & functions: labels, branching, calls, returns).<br> Project 9 – High-Level Language in Jack: implemented the game <em>Minesweeper</em>.<br> Project 10 – Began developing a Jack→VM compiler.<br> Project 11 – Planned OS libraries in Jack (Math, Memory, Screen, Keyboard) but not completed.</li>
-                <li><strong>OOP in .NET (C#):</strong> 
-                Exercise 1 – Assemblies & MSIL Exploration: Investigated .NET assemblies using ildasm, explored PE structure, MSIL code, and metadata. Practiced code inspection and analysis of managed code.
-                <br>
-                Exercise 2 – Bulls & Cows Game: Implemented the classic logic game <em>Bulls and Cows</em> in a console app, using OOP principles, arrays/collections, and external DLL utilities for screen handling.
-                <br>
-                Exercise 3 – Garage Management System: Built a full OOP system to manage a garage with cars, motorcycles, trucks (fuel/electric), using inheritance, polymorphism, enums, exceptions, and collections. Included operations like refueling, inflating tires, and vehicle state tracking.
-                <br>
-                Exercise 4 – Hierarchical Menus with Interfaces & Delegates: Developed a reusable hierarchical menu system in the console, demonstrating <strong>interfaces</strong>, <strong>delegates/events</strong>, and polymorphism. Supported multiple navigation layers and user actions.
-                <br>
-                Exercise 5 – Bulls & Cows (WinForms): Extended the Bulls & Cows game to a <strong>Windows Forms GUI</strong>, practicing event-driven programming, UI controls, and separation between game logic and presentation.
-                </li>
-                <li><strong>Fun Run game (2017):</strong> Dissertation in high school cyber programming and system design. There are explanatory videos for running the game in Run instructions. Written in the PYTHON programming language.</li>
-                <li><strong>Snake (Assembly):</strong> Dissertation in high school assembly programming. There is an explanatory video for running the game in Run instructions. Written in ASSEMBLY programming language.</li>
-                <li><strong>Data Structures HW2:</strong> This is work in a data structures course at Reichman University. Written in the JAVA programming language.</li>
-                <li><strong>Data Structures HW5:</strong> This is work in a data structures course at Reichman University. Combines different sorting algorithms and their analysis using a graph. Written in the JAVA programming language.</li>
-                <li><strong>IntroToCS:</strong> File folder of projects of Introduction to Computer Science course at Reichman University. These are projects 5-9 that we were asked to write in the course. They are of increasing difficulty, so that work 9 incorporates characteristics of a small CHATGPT.</li>
-            </ul>
-            <p style="margin-top:0.5rem;">(More projects and details are available in the <a href="https://roneliav16.github.io/Resume/" target="_blank">Portfolio</a>.)</p>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>&copy; 2025 Ron Eliav. All rights reserved.</p>
-        </footer>
+  <header class="hero" role="banner">
+    <div class="hero__inner container">
+      <div class="brand">
+        <h1 class="brand__title">Ron Eliav</h1>
+        <p class="brand__subtitle">Software Developer</p>
+        <ul class="brand__contacts" aria-label="Contact">
+          <li><a href="mailto:roneliav16@gmail.com">roneliav16@gmail.com</a></li>
+          <li><a href="tel:+972549719759">+972-54-971-9759</a></li>
+          <li>Igal Yadin 35, Modi'in</li>
+        </ul>
+        <div class="hero__cta">
+          <a class="btn" href="https://www.linkedin.com/in/ron-eliav-6892452a5/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://roneliav16.github.io/Resume/" target="_blank" rel="noopener">Portfolio</a>
+          <a class="btn btn--accent" href="#projects">View Projects</a>
+        </div>
+      </div>
+      <div class="hero__pitch">
+        <p>
+          Third-year CS student (overall GPA 96.22; Dean’s List in both first and second year). QA Automation Engineer at DealHub.io.
+          Skilled in Java, Python, C, C#, Assembly/HDL, JavaScript, HTML/CSS, SQL, Bash. Experienced with Machine Learning, Full-Stack,
+          Algorithms, Data Structures, VM language, and Git.
+        </p>
+      </div>
     </div>
+    <div class="hero__bg" aria-hidden="true"></div>
+  </header>
 
-    <script src="script.js"></script>
+  <main id="main" class="container" role="main">
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Projects</h2>
+        <div class="tools">
+          <label class="sr-only" for="search">Search projects</label>
+          <input id="search" class="input" type="search" placeholder="Search by name or tag…" autocomplete="off" />
+          <select id="filter" class="input">
+            <option value="all" selected>All categories</option>
+            <option value="fullstack">Full-Stack</option>
+            <option value="os">Operating Systems</option>
+            <option value="ml">Machine Learning</option>
+            <option value="digital">Digital Systems</option>
+            <option value="csharp">C# / .NET</option>
+            <option value="misc">Misc</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Project cards render here -->
+      <ul id="project-list" class="grid" aria-live="polite" aria-busy="true"></ul>
+
+      <template id="card-tpl">
+        <li class="card" tabindex="0">
+          <div class="card__head">
+            <h3 class="card__title"><a class="card__link" target="_blank" rel="noopener"></a></h3>
+            <span class="badge"></span>
+          </div>
+          <p class="card__desc"></p>
+          <div class="card__meta">
+            <ul class="tags" aria-label="Tags"></ul>
+          </div>
+          <div class="card__actions">
+            <a class="btn btn--sm btn--ghost repo" target="_blank" rel="noopener" hidden>GitHub</a>
+            <a class="btn btn--sm demo" target="_blank" rel="noopener" hidden>Live Demo</a>
+            <button class="btn btn--sm btn--accent more" type="button" aria-expanded="false" aria-controls="">More</button>
+          </div>
+          <div class="card__more" hidden>
+            <div class="video-wrap" hidden>
+              <!-- Optional YouTube/MP4 -->
+            </div>
+            <ul class="bullets"></ul>
+          </div>
+        </li>
+      </template>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Ron Eliav. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
