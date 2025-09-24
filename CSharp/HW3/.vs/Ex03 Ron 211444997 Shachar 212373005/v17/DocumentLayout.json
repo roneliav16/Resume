@@ -1,0 +1,410 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\valuerangeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\valuerangeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\fuelengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\fuelengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\fuelcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\fuelcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\electricengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\electricengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\garagelogicutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garagelogicutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.consoleui\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.consoleui\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\efueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\efueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\garagesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garagesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ron\\AppData\\Local\\Temp\\Rar$DIa0.183\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\vehiclecreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehiclecreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\evehiclegaragestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\evehiclegaragestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\enumberofdoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\enumberofdoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\emotorcyclelicensecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\emotorcyclelicensecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\hw3\\ex03.garagelogic\\electricmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\electricmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValueRangeException.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ValueRangeException.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\ValueRangeException.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ValueRangeException.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\ValueRangeException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:05:29.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ElectricCar.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricCar.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\ElectricCar.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricCar.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\ElectricCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:30:09.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FuelCar.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelCar.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\FuelCar.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelCar.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\FuelCar.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:43.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FuelEngine.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelEngine.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\FuelEngine.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelEngine.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\FuelEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:47.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GarageLogicUtils.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:44:02.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tire.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Tire.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Tire.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Tire.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Tire.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:57:42.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Truck.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Truck.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Truck.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Truck.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwFwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:05:29.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\UserInterface.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\UserInterface.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\UserInterface.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\UserInterface.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowGcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:55:34.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ElectricEngine.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricEngine.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\ElectricEngine.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricEngine.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\ElectricEngine.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:14.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InputValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\InputValidator.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\InputValidator.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\InputValidator.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\InputValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:33:53.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "eFuelType.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eFuelType.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\eFuelType.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eFuelType.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\eFuelType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:48:19.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\Program.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\Program.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.ConsoleUI\\Program.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:33:55.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\AppData\\Local\\Temp\\Rar$DIa0.183\\MainMenu.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa0.183\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Ron\\AppData\\Local\\Temp\\Rar$DIa0.183\\MainMenu.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa0.183\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:51:56.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VehicleCreator.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\VehicleCreator.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\VehicleCreator.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\VehicleCreator.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\VehicleCreator.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:11:12.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GarageSystemLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:55:04.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Car.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Car.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Car.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Car.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:06:23.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Vehicle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:00:57.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Motorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Motorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Motorcycle.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\Motorcycle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Motorcycle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:57:28.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FuelMotorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:43:38.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "eVehicleGarageStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eVehicleGarageStatus.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\eVehicleGarageStatus.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eVehicleGarageStatus.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\eVehicleGarageStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:40.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "eNumberOfDoors.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eNumberOfDoors.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\eNumberOfDoors.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eNumberOfDoors.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\eNumberOfDoors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:38.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "eMotorcycleLicenseCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eMotorcycleLicenseCategory.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\eMotorcycleLicenseCategory.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\eMotorcycleLicenseCategory.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\eMotorcycleLicenseCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:36.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ElectricMotorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricMotorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\ElectricMotorcycle.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\HW3\\Ex03.GarageLogic\\ElectricMotorcycle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\ElectricMotorcycle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:32:31.279Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

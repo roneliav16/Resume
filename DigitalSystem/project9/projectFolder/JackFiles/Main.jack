@@ -1,0 +1,20 @@
+class Main {
+    function void main() {
+        var char key;
+        var Game game;
+        var int indexGame;
+        let indexGame = 0;
+        while (~(indexGame = 3)) { // 3 Games
+            let game = Game.new(indexGame);
+            do game.startGame();
+            let key = 0;
+            while (~(key = 32)) {
+                let key = Keyboard.keyPressed();
+            }
+            do Screen.clearScreen();
+            do game.dispose();
+            let indexGame = indexGame + 1; 
+        }
+        return;
+    }
+}

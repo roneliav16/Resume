@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC018B8F-726F-4DAD-8113-11DFB548CC1B}|Ex01_03\\Ex01_03.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC018B8F-726F-4DAD-8113-11DFB548CC1B}|Ex01_03\\Ex01_03.csproj|solutionrelative:ex01_03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC018B8F-726F-4DAD-8113-11DFB548CC1B}|Ex01_03\\Ex01_03.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_03\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC018B8F-726F-4DAD-8113-11DFB548CC1B}|Ex01_03\\Ex01_03.csproj|solutionrelative:ex01_03\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70792655-79F1-4902-A7CD-22FAAE9EF1F8}|Ex01_04\\Ex01_04.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70792655-79F1-4902-A7CD-22FAAE9EF1F8}|Ex01_04\\Ex01_04.csproj|solutionrelative:ex01_04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_02\\treenumberconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|solutionrelative:ex01_02\\treenumberconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|solutionrelative:ex01_02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_02\\drawnumbertree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B655248-70B5-4BD0-A445-D130DC34CDE8}|Ex01_02\\Ex01_02.csproj|solutionrelative:ex01_02\\drawnumbertree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0DD369C-D4D3-494F-A1EE-E7C4CE92DACE}|Ex01_01\\Ex01_01.csproj|c:\\users\\ron\\desktop\\degree\\csharp\\ex01 ron 211444997 shahar 212373005\\ex01_01\\binarynumberstonumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0DD369C-D4D3-494F-A1EE-E7C4CE92DACE}|Ex01_01\\Ex01_01.csproj|solutionrelative:ex01_01\\binarynumberstonumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488C5C93-00F6-4A07-B9B4-94621245B364}|Ex01_05\\Ex01_05.csproj|C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\ex01_05\\numberstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488C5C93-00F6-4A07-B9B4-94621245B364}|Ex01_05\\Ex01_05.csproj|solutionrelative:ex01_05\\numberstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488C5C93-00F6-4A07-B9B4-94621245B364}|Ex01_05\\Ex01_05.csproj|C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\ex01_05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488C5C93-00F6-4A07-B9B4-94621245B364}|Ex01_05\\Ex01_05.csproj|solutionrelative:ex01_05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_04\\Program.cs",
+              "RelativeDocumentMoniker": "Ex01_04\\Program.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_04\\Program.cs",
+              "RelativeToolTip": "Ex01_04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T18:00:36.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\Program.cs",
+              "RelativeDocumentMoniker": "Ex01_02\\Program.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\Program.cs",
+              "RelativeToolTip": "Ex01_02\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T18:00:06.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrawNumberTree.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\DrawNumberTree.cs",
+              "RelativeDocumentMoniker": "Ex01_02\\DrawNumberTree.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\DrawNumberTree.cs",
+              "RelativeToolTip": "Ex01_02\\DrawNumberTree.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T17:56:37.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TreeNumberConstructor.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\TreeNumberConstructor.cs",
+              "RelativeDocumentMoniker": "Ex01_02\\TreeNumberConstructor.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_02\\TreeNumberConstructor.cs",
+              "RelativeToolTip": "Ex01_02\\TreeNumberConstructor.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T17:56:34.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_03\\Program.cs",
+              "RelativeDocumentMoniker": "Ex01_03\\Program.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_03\\Program.cs",
+              "RelativeToolTip": "Ex01_03\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T17:55:20.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_03\\InputValidator.cs",
+              "RelativeDocumentMoniker": "Ex01_03\\InputValidator.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_03\\InputValidator.cs",
+              "RelativeToolTip": "Ex01_03\\InputValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T17:55:20.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BinaryNumbersToNumbers.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_01\\BinaryNumbersToNumbers.cs",
+              "RelativeDocumentMoniker": "Ex01_01\\BinaryNumbersToNumbers.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_01\\BinaryNumbersToNumbers.cs",
+              "RelativeToolTip": "Ex01_01\\BinaryNumbersToNumbers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T07:55:30.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_05\\Program.cs",
+              "RelativeDocumentMoniker": "Ex01_05\\Program.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_05\\Program.cs",
+              "RelativeToolTip": "Ex01_05\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:15:57.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NumberStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_05\\NumberStatistics.cs",
+              "RelativeDocumentMoniker": "Ex01_05\\NumberStatistics.cs",
+              "ToolTip": "C:\\Users\\Ron\\Desktop\\Degree\\CSharp\\Ex01 Ron 211444997 Shahar 212373005\\Ex01_05\\NumberStatistics.cs",
+              "RelativeToolTip": "Ex01_05\\NumberStatistics.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:15:51.994Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

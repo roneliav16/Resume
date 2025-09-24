@@ -1,0 +1,83 @@
+// /** Implements a graphical square.
+// * The square has top-left x and y coordinates, and a size. */
+class Square {
+
+    field int x, y; // screen location of the top-left corner of this square
+    field int sizeX, sizeY;
+    field int row, column;
+
+    /** Constructs a new square with a given location and size */
+    constructor Square new(int ax, int ay) {
+        let x = ax;
+        let y = ay;
+        let sizeX = 26;
+        let sizeY = 22;
+        let row = 4; // Middle square (5,5) - it's 4 because we use arrays
+        let column = 4;
+        return this;
+    }
+
+    method int getRow() {
+        return row;
+    }
+
+    method int getColumn() {
+        return column;
+    }
+    
+    /** Disposes this square */
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+    
+    /** Draws this square in its current (x,y) location */
+    method void draw() {
+        do Screen.setColor(true);
+        do Screen.drawRectangle(x, y, x + sizeX - 1, y + sizeY - 1);
+        return;
+    }
+    
+    /** Erases this square */
+    method void erase() {
+        do Screen.setColor(false);
+        do Screen.drawRectangle(x, y, x + sizeX - 1, y + sizeY - 1);
+        return;
+    }
+
+    method void moveUp() {
+    /** Moves this square up by 1 square */
+        if (y > 30) {
+            let y = y - (sizeY + 1);           
+            let row = row - 1;
+        }
+        return;
+    }
+    
+    method void moveDown() {
+    /** Moves this square down by 1 square */
+        if (y < 213) {
+            let y = y + (sizeY + 1);
+            let row = row + 1;
+        }
+        return;
+    }
+    
+    method void moveLeft() {
+    /** Moves this square left by 1 square  */
+        if (x > 154) {
+            let x = x - (sizeX + 1);
+            let column = column - 1;
+        }
+        return;
+    }
+    
+    method void moveRight() {
+    /** Moves this square right by 1 square */
+        if (x < 369) {
+            let x = x + (sizeX + 1);
+            let column = column + 1;
+        }
+        return;
+    }
+}

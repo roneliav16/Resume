@@ -1,0 +1,377 @@
+/** This class managing the game */
+class Game {
+        
+    field Array board;
+    field Array discoverBoard;
+    field int numBoard;
+
+    constructor Game new(int game) {
+        var int i;
+        var int j;
+        var Array tempRow;
+        let numBoard = game;      
+        let board = Array.new(9);
+
+        let i = 0;
+        while(i < 9) {
+            let board[i] = Array.new(9);
+            let i = i + 1;
+        }
+        
+        do fillBoard(numBoard, board);
+        let discoverBoard = Array.new(9);
+
+        let i = 0;
+        while(i < 9){
+            let discoverBoard[i] = Array.new(9);
+            let i = i + 1;
+        }
+
+        let i = 0;
+        let j = 0;
+        while(i < 9) {
+            let tempRow = discoverBoard[i];
+            while(j < 9){
+                let tempRow[j] = 0;
+                let j = j + 1; 
+            }
+            let j = 0;
+            let i = i+1;
+        }
+        return this;
+    }
+    
+    method void startGame() {
+        var Square square;
+        var boolean squareBlink;
+        var char key;
+        var boolean exit,ifWin;
+
+        let exit = false;
+        let ifWin = false;
+
+        do GameScreen.printScreen();
+
+        let square = Square.new(262,122); // Middle square of the board
+        let squareBlink = true;
+        while (~exit) {
+            // checks for ket to be pressed
+            let key = Keyboard.keyPressed();
+            if (~(key = 0)) {
+                let exit = keyPressed(key, square);
+            }
+
+            do GameScreen.printDiscovered(discoverBoard);
+            let squareBlink = GameScreen.printSquare(square, squareBlink);
+            do Sys.wait(100);
+            if(checkWin() = true) {
+                let exit = true;
+                let ifWin = true;
+            }
+        }
+        let squareBlink = GameScreen.printSquare(square, false);
+        do GameScreen.printDiscovered(discoverBoard);
+        if (ifWin = false) {
+            do GameScreen.drawTryAgain(1603); // print at (50,50)
+        } else {
+            do GameScreen.drawWin(1603); // print at (50,50)
+
+        }
+        do square.dispose();
+        return;
+    }
+
+    method int getNumBoard() {
+        return numBoard;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    method boolean checkWin() {
+        var int i,j;
+        var Array tempRow, tempRowBoard;
+        
+        let i = 0;
+        let j = 0;
+        while(i < 9) {
+            let tempRow = discoverBoard[i];
+            let tempRowBoard = board[i];
+            while(j < 9) {
+                if (~(tempRow[j] = tempRowBoard[j])) {
+                    if (~(tempRowBoard[j] = 9 | ((tempRow[j] = 11) & (tempRowBoard[j] = 0)))) {
+                        return false;
+                    }
+                }
+                let j = j + 1; 
+            }
+            let j = 0;
+            let i = i+1;
+        }
+        return true;
+    }
+
+    method boolean step(Square square) {
+        var int row, column;
+        var Array temp;
+
+        let row = square.getRow();
+        let column = square.getColumn();
+        let temp = board[row];
+        if (temp[column] = 9) {
+            do copySquareArray(row, column, true);
+            return true;
+        }
+        else {
+            do copySquareArray(row, column, false);
+            return false;
+        }
+    } 
+
+    method void copySquareArray(int row, int column, boolean bomb) {
+        var int i,j,tempJ, tempEndJ;
+        var int endI, endJ;
+        var Array temp, temp2;
+
+        if (bomb = true) {
+            let temp = board[row];
+            let temp2 = discoverBoard[row];
+            let temp2[column] = temp[column];
+            return;
+        }
+        let i = 3;
+        let j = 3;
+
+        let endI = row + 1;
+        let endJ = column + 1;
+        if ((row = 8) | (row = 0)) {
+            let i = 2;
+            if (row = 8) { let endI = 8; }
+            else { let endI = 1; }
+        }
+        if ((column = 8) | (column = 0)) {
+            let j = 2;
+            if (column = 8) { let endJ = 8; }
+            else { let endJ = 1; }
+        }
+
+        let tempJ = j;
+        let tempEndJ = endJ;
+
+        while (~(i = 0)) {
+            while (~(j = 0)) {
+                let temp = board[endI];
+                let temp2 = discoverBoard[endI];
+                if(temp[endJ] = 0) {
+                    let temp2[endJ] = 11;
+                }
+                let endJ = endJ - 1;
+                let j = j - 1;
+            }
+            let j = tempJ;
+            let endJ = tempEndJ;
+            let endI = endI - 1;
+            let i = i - 1;
+        }
+        let temp = board[row];
+        let temp2 = discoverBoard[row];
+        if (~(temp2[column] = 11)) {
+            let temp2[column] = temp[column];
+        }
+        return;
+    }
+
+    method boolean keyPressed(char key, Square square) {
+        var int row, column;
+        var Array temp;
+        var boolean exit;
+        if (key = 140) { return true; }
+        if (key = 131) { // Up
+            do square.erase();
+            do square.moveUp(); 
+        } 
+        if (key = 133) {  // Down
+            do square.erase();
+            do square.moveDown();
+        } 
+        if (key = 130) { // Left
+            do square.erase();
+            do square.moveLeft(); 
+        } 
+        if (key = 132) { // Right
+            do square.erase();
+            do square.moveRight(); 
+        } 
+        if (key = 32) {  // Space
+            let exit = step(square);
+            return exit;
+        }
+        if (key = 77 | key = 109) {
+            let row = square.getRow();
+            let column = square.getColumn();
+            let temp = discoverBoard[row];
+            if (temp[column] = 10) {
+                let temp[column] = 0;
+            } else {
+                if (temp[column] = 0) {
+                    let temp[column] = 10;
+                }
+            }
+        }
+        return false;    
+    }
+
+    method void fillBoard(int numBoard, Array board) {
+        var Array tempRow;
+        // numboard 0
+
+        // 1 2 1 1 1 9 9 3 2
+        // 9 2 9 3 4 4 4 9 9
+        // 3 5 4 9 9 9 3 3 2
+        // 9 9 9 4 3 4 9 2 0 
+        // 3 4 2 2 1 3 9 2 0
+        // 9 4 2 2 9 2 1 2 1 
+        // 9 9 9 2 1 1 0 1 9
+        // 9 4 2 1 0 0 0 2 2
+        // 1 1 0 0 0 0 0 1 9 
+
+        if(numBoard = 0){
+            let tempRow = board[0];
+            let tempRow[0] = 1; let tempRow[1] = 2; let tempRow[2] = 1; let tempRow[3] = 1; let tempRow[4] = 1;
+            let tempRow[5] = 9; let tempRow[6] = 9; let tempRow[7] = 3; let tempRow[8] = 2;
+            
+            let tempRow = board[1];
+            let tempRow[0] = 9; let tempRow[1] = 2; let tempRow[2] = 9; let tempRow[3] = 3; let tempRow[4] = 4;
+            let tempRow[5] = 4; let tempRow[6] = 4; let tempRow[7] = 9; let tempRow[8] = 9;
+            
+            let tempRow = board[2];
+            let tempRow[0] = 3; let tempRow[1] = 5; let tempRow[2] = 4; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 9; let tempRow[6] = 3; let tempRow[7] = 3; let tempRow[8] = 2;
+            
+            let tempRow = board[3];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 4; let tempRow[4] = 3;
+            let tempRow[5] = 4; let tempRow[6] = 9; let tempRow[7] = 2; let tempRow[8] = 0;
+            
+            let tempRow = board[4];
+            let tempRow[0] = 3; let tempRow[1] = 4; let tempRow[2] = 2; let tempRow[3] = 2; let tempRow[4] = 1;
+            let tempRow[5] = 3; let tempRow[6] = 9; let tempRow[7] = 2; let tempRow[8] = 0;
+            
+            let tempRow = board[5];
+            let tempRow[0] = 9; let tempRow[1] = 4; let tempRow[2] = 2; let tempRow[3] = 2; let tempRow[4] = 9;
+            let tempRow[5] = 2; let tempRow[6] = 1; let tempRow[7] = 2; let tempRow[8] = 1;
+            
+            let tempRow = board[6];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 2; let tempRow[4] = 1;
+            let tempRow[5] = 1; let tempRow[6] = 0; let tempRow[7] = 1; let tempRow[8] = 9;
+            
+            let tempRow = board[7];
+            let tempRow[0] = 9; let tempRow[1] = 4; let tempRow[2] = 2; let tempRow[3] = 1; let tempRow[4] = 0;
+            let tempRow[5] = 0; let tempRow[6] = 0; let tempRow[7] = 2; let tempRow[8] = 2;
+            
+            let tempRow = board[8];
+            let tempRow[0] = 1; let tempRow[1] = 1; let tempRow[2] = 0; let tempRow[3] = 0; let tempRow[4] = 0;
+            let tempRow[5] = 0; let tempRow[6] = 0; let tempRow[7] = 1; let tempRow[8] = 9;
+        }
+
+        // numBoard 1
+        // 9 9 2 9 9 1 0 2 9 
+        // 9 4 2 2 2 1 1 3 9
+        // 9 5 2 1 0 1 3 9 3 
+        // 9 9 9 1 0 2 9 9 3
+        // 9 4 2 1 0 2 9 9 3
+        // 2 1 0 0 1 2 3 4 9 
+        // 2 2 1 0 1 9 1 2 9
+        // 9 9 1 1 2 3 3 3 3 
+        // 9 3 1 1 9 2 9 9 9 
+
+        if(numBoard = 1){
+            let tempRow = board[0];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 2; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 1; let tempRow[6] = 0; let tempRow[7] = 2; let tempRow[8] = 9;
+            
+            let tempRow = board[1];
+            let tempRow[0] = 9; let tempRow[1] = 4; let tempRow[2] = 2; let tempRow[3] = 2; let tempRow[4] = 2;
+            let tempRow[5] = 1; let tempRow[6] = 1; let tempRow[7] = 3; let tempRow[8] = 9;
+            
+            let tempRow = board[2];
+            let tempRow[0] = 9; let tempRow[1] = 5; let tempRow[2] = 2; let tempRow[3] = 1; let tempRow[4] = 0;
+            let tempRow[5] = 1; let tempRow[6] = 3; let tempRow[7] = 9; let tempRow[8] = 3;
+            
+            let tempRow = board[3];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 1; let tempRow[4] = 0;
+            let tempRow[5] = 2; let tempRow[6] = 9; let tempRow[7] = 9; let tempRow[8] = 3;
+            
+            let tempRow = board[4];
+            let tempRow[0] = 9; let tempRow[1] = 4; let tempRow[2] = 2; let tempRow[3] = 1; let tempRow[4] = 0;
+            let tempRow[5] = 2; let tempRow[6] = 9; let tempRow[7] = 9; let tempRow[8] = 3;
+            
+            let tempRow = board[5];
+            let tempRow[0] = 2; let tempRow[1] = 1; let tempRow[2] = 0; let tempRow[3] = 0; let tempRow[4] = 1;
+            let tempRow[5] = 2; let tempRow[6] = 3; let tempRow[7] = 4; let tempRow[8] = 9;
+            
+            let tempRow = board[6];
+            let tempRow[0] = 2; let tempRow[1] = 2; let tempRow[2] = 1; let tempRow[3] = 0; let tempRow[4] = 1;
+            let tempRow[5] = 9; let tempRow[6] = 1; let tempRow[7] = 2; let tempRow[8] = 9;
+            
+            let tempRow = board[7];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 1; let tempRow[3] = 1; let tempRow[4] = 2;
+            let tempRow[5] = 3; let tempRow[6] = 3; let tempRow[7] = 3; let tempRow[8] = 3;
+            
+            let tempRow = board[8];
+            let tempRow[0] = 9; let tempRow[1] = 3; let tempRow[2] = 1; let tempRow[3] = 1; let tempRow[4] = 9;
+            let tempRow[5] = 2; let tempRow[6] = 9; let tempRow[7] = 9; let tempRow[8] = 9;
+        }
+
+        // numBoard 2
+        // 9 9 9 9 9 3 1 1 1  
+        // 9 5 4 9 9 9 3 2 9  
+        // 9 4 3 4 9 9 9 2 3  
+        // 4 9 9 5 6 9 9 9 2  
+        // 9 9 9 9 9 9 9 9 2 
+        // 4 6 7 9 6 4 3 3 2 
+        // 9 9 9 9 9 2 0 2 9
+        // 9 6 5 4 9 2 0 2 9
+        // 9 9 1 1 1 1 0 1 1 
+
+        if(numBoard = 2) {
+            let tempRow = board[0];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 3; let tempRow[6] = 1; let tempRow[7] = 1; let tempRow[8] = 1;
+            
+            let tempRow = board[1];
+            let tempRow[0] = 9; let tempRow[1] = 5; let tempRow[2] = 4; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 9; let tempRow[6] = 3; let tempRow[7] = 2; let tempRow[8] = 9;
+            
+            let tempRow = board[2];
+            let tempRow[0] = 9; let tempRow[1] = 4; let tempRow[2] = 3; let tempRow[3] = 4; let tempRow[4] = 9;
+            let tempRow[5] = 9; let tempRow[6] = 9; let tempRow[7] = 2; let tempRow[8] = 3;
+            
+            let tempRow = board[3];
+            let tempRow[0] = 4; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 5; let tempRow[4] = 6;
+            let tempRow[5] = 9; let tempRow[6] = 9; let tempRow[7] = 9; let tempRow[8] = 2;
+            
+            let tempRow = board[4];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 9; let tempRow[6] = 9; let tempRow[7] = 9; let tempRow[8] = 2;
+            
+            let tempRow = board[5];
+            let tempRow[0] = 4; let tempRow[1] = 6; let tempRow[2] = 7; let tempRow[3] = 9; let tempRow[4] = 6;
+            let tempRow[5] = 4; let tempRow[6] = 3; let tempRow[7] = 3; let tempRow[8] = 2;
+            
+            let tempRow = board[6];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 9; let tempRow[3] = 9; let tempRow[4] = 9;
+            let tempRow[5] = 2; let tempRow[6] = 0; let tempRow[7] = 2; let tempRow[8] = 9;
+            
+            let tempRow = board[7];
+            let tempRow[0] = 9; let tempRow[1] = 6; let tempRow[2] = 5; let tempRow[3] = 4; let tempRow[4] = 9;
+            let tempRow[5] = 2; let tempRow[6] = 0; let tempRow[7] = 2; let tempRow[8] = 9;
+            
+            let tempRow = board[8];
+            let tempRow[0] = 9; let tempRow[1] = 9; let tempRow[2] = 1; let tempRow[3] = 1; let tempRow[4] = 1;
+            let tempRow[5] = 1; let tempRow[6] = 0; let tempRow[7] = 1; let tempRow[8] = 1;
+        }
+        return; 
+    }
+}

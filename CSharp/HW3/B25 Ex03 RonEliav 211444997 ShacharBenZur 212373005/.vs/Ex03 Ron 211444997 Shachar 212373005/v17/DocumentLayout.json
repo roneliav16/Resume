@@ -1,0 +1,265 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.consoleui\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\idc approved\\b25 ex03 roneliav 211444997 shacharbenzur 212373005\\ex03.garagelogic\\fuelengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\fuelengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\garagesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garagesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.consoleui\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE92DE74-8EBC-4C4D-9536-64010CE553BD}|Ex03.ConsoleUI\\Ex03.ConsoleUI.csproj|solutionrelative:ex03.consoleui\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\garagelogicutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garagelogicutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\ex03.garagelogic\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\UserInterface.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\UserInterface.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\UserInterface.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\UserInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:10:57.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FuelMotorcycle.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\FuelMotorcycle.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:19:09.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuelEngine.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\FuelEngine.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\FuelEngine.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\FuelEngine.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\FuelEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:16:47.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GarageLogicUtils.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\GarageLogicUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:11:18.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tire.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Tire.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Tire.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Tire.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Tire.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAqwEAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:08:26.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Truck.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Truck.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Truck.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Truck.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwFsAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:07:27.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicle.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\Vehicle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:05:24.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InputValidator.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\InputValidator.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\InputValidator.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\InputValidator.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\InputValidator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:25:09.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ElectricCar.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\ElectricCar.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\ElectricCar.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\ElectricCar.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\ElectricCar.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:06:01.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\Program.cs",
+              "RelativeDocumentMoniker": "Ex03.ConsoleUI\\Program.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.ConsoleUI\\Program.cs",
+              "RelativeToolTip": "Ex03.ConsoleUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:05:09.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GarageSystemLogic.cs",
+              "DocumentMoniker": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "ToolTip": "C:\\IDC approved\\B25 Ex03 RonEliav 211444997 ShacharBenZur 212373005\\Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\GarageSystemLogic.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwFwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T21:11:22.591Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 126,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

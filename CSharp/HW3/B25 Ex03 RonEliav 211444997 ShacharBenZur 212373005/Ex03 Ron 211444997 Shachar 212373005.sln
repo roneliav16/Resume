@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex03.GarageLogic", "Ex03.GarageLogic\Ex03.GarageLogic.csproj", "{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex03.ConsoleUI", "Ex03.ConsoleUI\Ex03.ConsoleUI.csproj", "{AE92DE74-8EBC-4C4D-9536-64010CE553BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FA85A5-C952-4105-96E1-7F8CEDFC59E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE92DE74-8EBC-4C4D-9536-64010CE553BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE92DE74-8EBC-4C4D-9536-64010CE553BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE92DE74-8EBC-4C4D-9536-64010CE553BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE92DE74-8EBC-4C4D-9536-64010CE553BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0E8C6B0-0F17-4012-BCB9-F06F134E0E8A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+FuelMotorcycle,75-321-22,Honda-CB650R,68,Michelin,28,Tom,052-1234560,A2,750
+FuelMotorcycle,92-715-83,Kawasaki-Z900,32,Pirelli,27,Aviv,052-1234561,AB,900
+ElectricMotorcycle,63-290-54,Zero-SR/F,85,Dunlop,29,Dan,052-1234562,A,0
+ElectricMotorcycle,11-845-27,LiveWire-One,42,Bridgestone,27,Tal,052-1234563,B2,0
+FuelCar,48-732-91,Toyota-Corolla,73,Continental,31,Nir,052-1234564,Black,4
+FuelCar,56-109-35,Hyundai-i20,27,Goodyear,30,Avi,052-1234565,Silver,5
+ElectricCar,87-456-20,Tesla-Model3,64,Michelin,31,Eli,052-1234566,White,4
+ElectricCar,29-618-74,MG-ZS-EV,59,Pirelli,29,Mor,052-1234567,Yellow,5
+Truck,64-970-38,Volvo-FH16,81,Hankook,26,Guy,052-1234568,true,18.5
+Truck,39-582-16,Scania-R450,44,Continental,25,Gil,052-1234569,false,22.4
+*****
+THE FORMAT IS:
+VehicleType, LicensePlate, ModelName, EnergyPercentage, TierModel, CurrAirPressure,  OwnerName, OwnerPhone, [SPECIFIC VEHICLE PROPERTIES]
