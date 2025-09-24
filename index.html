@@ -86,119 +86,133 @@
 
     <!-- רשימת פרויקטים.
          שים לב: כל <li> מכיל data-* לקישורים רלוונטיים. אם לא תספק ערך—הכפתור יוסתר. -->
-    <ul class="projects-list">
+<ul class="projects-list">
 
-      <!-- 1) RentMate -->
-      <li id="rentmate" data-category="fullstack"
-          data-live="https://rentmate-lweq.onrender.com/index.html"
-          data-github="https://github.com/roneliav16/Resume/tree/main/RentMate"
-          <div class="video-wrap">
-            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/watch?v=TYh97gjUhEg&feature=youtu.be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-  </div>
-        <strong><a href="https://rentmate-lweq.onrender.com/index.html" target="_blank" rel="noopener">Full Stack Project – RentMate (2025):</a></strong>
-        Developed an online rental marketplace with user registration/login, cart, checkout, and purchase history (disk persistence). Extended functionality:
-        <strong>RentMate AI</strong> – price suggestions in AI Chat Box for current optimal price (using Gemini and Tavily), user stats, dispute center, profile management, an admin panel, DoS protection, and automated testing using node-fetch.
-      </li>
+  <!-- 1) RentMate -->
+  <li id="rentmate" data-category="fullstack"
+      data-live="https://rentmate-lweq.onrender.com/index.html"
+      data-github="https://github.com/roneliav16/Resume/tree/main/RentMate">
+    <strong>
+      <a href="https://rentmate-lweq.onrender.com/index.html" target="_blank" rel="noopener">
+        Full Stack Project – RentMate (2025):
+      </a>
+    </strong>
+    Developed an online rental marketplace with user registration/login, cart, checkout, and purchase history (disk persistence).
+    Extended functionality: <strong>RentMate AI</strong> – price suggestions in AI Chat Box for current optimal price (using Gemini and Tavily), user stats, dispute center, profile management, an admin panel, DoS protection, and automated testing using node-fetch.
 
-      <!-- 2) OS – Ex1 -->
-      <li id="os-ex1" data-category="os"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%201"
-        <strong>Operating Systems – Exercise 1:</strong>
-        Implemented core synchronization primitives in C, including semaphores (TAS & Ticket Lock), condition variables, read–write locks, thread-local storage, and a producer–consumer system.
-      </li>
+    <!-- YouTube embed (שימו לב לפורמט /embed/ ולא watch?v=) -->
+    <div class="video-wrap">
+      <iframe
+        loading="lazy"
+        src="https://www.youtube.com/embed/TYh97gjUhEg"
+        title="RentMate demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </li>
 
-      <!-- 3) OS – Ex2 -->
-      <li id="os-ex2" data-category="os"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%202"
-        <strong>Operating Systems – Exercise 2:</strong>
-        Built a user-level threading library in C using round-robin scheduling, context switching with sigsetjmp/siglongjmp, virtual timer interrupts, and thread control blocks.
-      </li>
+  <!-- 2) OS – Ex1 -->
+  <li id="os-ex1" data-category="os"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%201">
+    <strong>Operating Systems – Exercise 1:</strong>
+    Implemented core synchronization primitives in C, including semaphores (TAS & Ticket Lock), condition variables, read–write locks, thread-local storage, and a producer–consumer system.
+  </li>
 
-      <!-- 4) OS – Ex3 -->
-      <li id="os-ex3" data-category="os"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%203"
-        <strong>Operating Systems – Exercise 3:</strong>
-        Designed and implemented a simple block-based filesystem ("OnlyFiles") in C, supporting file creation, deletion, read/write, and metadata management on a 10MB virtual disk.
-      </li>
+  <!-- 3) OS – Ex2 -->
+  <li id="os-ex2" data-category="os"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%202">
+    <strong>Operating Systems – Exercise 2:</strong>
+    Built a user-level threading library in C using round-robin scheduling, context switching with sigsetjmp/siglongjmp, virtual timer interrupts, and thread control blocks.
+  </li>
 
-      <!-- 5) OS – Final -->
-      <li id="os-final" data-category="os"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20FinalProject"
-        <strong>Operating Systems – Final Project:</strong>
-        Developed a modular multithreaded string-processing pipeline in C, with dynamically loaded plugins (e.g., uppercaser, flipper, logger). Implemented thread-safe producer–consumer queues, synchronization mechanisms, and clean shutdown via dynamic linking.
-      </li>
+  <!-- 4) OS – Ex3 -->
+  <li id="os-ex3" data-category="os"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20Exercise%203">
+    <strong>Operating Systems – Exercise 3:</strong>
+    Designed and implemented a simple block-based filesystem ("OnlyFiles") in C, supporting file creation, deletion, read/write, and metadata management on a 10MB virtual disk.
+  </li>
 
-      <!-- 6) ML -->
-      <li id="ml" data-category="ml"
-          data-github="https://github.com/roneliav16/Resume/tree/main/MachineLearning"
-        <strong>Machine Learning from Data:</strong>
-        5 Full projects including: Implemented decision trees with pruning, logistic regression with gradient descent, Poisson MLE estimations, and k-means clustering for image segmentation.
-      </li>
+  <!-- 5) OS – Final -->
+  <li id="os-final" data-category="os"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Operation%20System%20-%20FinalProject">
+    <strong>Operating Systems – Final Project:</strong>
+    Developed a modular multithreaded string-processing pipeline in C, with dynamically loaded plugins (e.g., uppercaser, flipper, logger). Implemented thread-safe producer–consumer queues, synchronization mechanisms, and clean shutdown via dynamic linking.
+  </li>
 
-      <!-- 7) Nand2Tetris -->
-      <li id="nand2tetris" data-category="digital"
-          data-github="https://github.com/roneliav16/Resume/tree/main/DigitalSystem"
-        <strong>Digital System (Nand2Tetris):</strong>
-        Project 1 – Implemented elementary logic gates (NAND, AND, OR, XOR, MUX, DMUX).<br>
-        Project 2 – Built adders and a basic ALU.<br>
-        Project 3 – Implemented memory chips (DFF, registers, RAM, counters).<br>
-        Project 4 – Wrote Hack assembly programs (multiplication, drawing, loops).<br>
-        Project 5 – Built the Hack CPU (ALU + registers + program counter).<br>
-        Project 6 – Developed an assembler to translate Hack assembly into binary machine code.<br>
-        Project 7 – VM Translator I (stack arithmetic: push/pop, arithmetic, logic).<br>
-        Project 8 – VM Translator II (control flow & functions: labels, branching, calls, returns).<br>
-        Project 9 – High-Level Language in Jack: implemented the game <em>Minesweeper</em>.<br>
-        Project 10 – Began developing a Jack→VM compiler.<br>
-        Project 11 – Planned OS libraries in Jack (Math, Memory, Screen, Keyboard) but not completed.
-      </li>
+  <!-- 6) ML -->
+  <li id="ml" data-category="ml"
+      data-github="https://github.com/roneliav16/Resume/tree/main/MachineLearning">
+    <strong>Machine Learning from Data:</strong>
+    5 Full projects including: Implemented decision trees with pruning, logistic regression with gradient descent, Poisson MLE estimations, and k-means clustering for image segmentation.
+  </li>
 
-      <!-- 8) C# OOP -->
-      <li id="csharp" data-category="csharp"
-          data-github="https://github.com/roneliav16/Resume/tree/main/CSharp"
-        <strong>OOP in .NET (C#):</strong>
-        Exercise 1 – Assemblies & MSIL Exploration…<br>
-        Exercise 2 – Bulls & Cows Game…<br>
-        Exercise 3 – Garage Management System…<br>
-        Exercise 4 – Hierarchical Menus with Interfaces & Delegates…<br>
-        Exercise 5 – Bulls & Cows (WinForms)…
-      </li>
+  <!-- 7) Nand2Tetris -->
+  <li id="nand2tetris" data-category="digital"
+      data-github="https://github.com/roneliav16/Resume/tree/main/DigitalSystem">
+    <strong>Digital System (Nand2Tetris):</strong>
+    Project 1 – Implemented elementary logic gates (NAND, AND, OR, XOR, MUX, DMUX).<br>
+    Project 2 – Built adders and a basic ALU.<br>
+    Project 3 – Implemented memory chips (DFF, registers, RAM, counters).<br>
+    Project 4 – Wrote Hack assembly programs (multiplication, drawing, loops).<br>
+    Project 5 – Built the Hack CPU (ALU + registers + program counter).<br>
+    Project 6 – Developed an assembler to translate Hack assembly into binary machine code.<br>
+    Project 7 – VM Translator I (stack arithmetic: push/pop, arithmetic, logic).<br>
+    Project 8 – VM Translator II (control flow & functions: labels, branching, calls, returns).<br>
+    Project 9 – High-Level Language in Jack: implemented the game <em>Minesweeper</em>.<br>
+    Project 10 – Began developing a Jack→VM compiler.<br>
+    Project 11 – Planned OS libraries in Jack (Math, Memory, Screen, Keyboard) but not completed.
+  </li>
 
-      <!-- 9) Fun Run -->
-      <li id="fun-run" data-category="misc"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Fun%20Run"
-        <strong>Fun Run game (2017):</strong>
-        Dissertation in high school cyber programming and system design. There are explanatory videos for running the game in Run instructions. Written in the PYTHON programming language.
-      </li>
+  <!-- 8) C# OOP -->
+  <li id="csharp" data-category="csharp"
+      data-github="https://github.com/roneliav16/Resume/tree/main/CSharp">
+    <strong>OOP in .NET (C#):</strong>
+    Exercise 1 – Assemblies & MSIL Exploration…<br>
+    Exercise 2 – Bulls & Cows Game…<br>
+    Exercise 3 – Garage Management System…<br>
+    Exercise 4 – Hierarchical Menus with Interfaces & Delegates…<br>
+    Exercise 5 – Bulls & Cows (WinForms)…
+  </li>
 
-      <!-- 10) Snake -->
-      <li id="snake" data-category="misc"
-          data-github="https://github.com/roneliav16/Resume/tree/main/Snake"
-        <strong>Snake (Assembly):</strong>
-        Dissertation in high school assembly programming. There is an explanatory video for running the game in Run instructions. Written in ASSEMBLY programming language.
-      </li>
+  <!-- 9) Fun Run -->
+  <li id="fun-run" data-category="misc"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Fun%20Run">
+    <strong>Fun Run game (2017):</strong>
+    Dissertation in high school cyber programming and system design. There are explanatory videos for running the game in Run instructions. Written in the PYTHON programming language.
+  </li>
 
-      <!-- 11) Data Structures HW2 -->
-      <li id="ds-hw2" data-category="misc"
-          data-github="https://github.com/roneliav16/Resume/tree/main/HW2"
-        <strong>Data Structures HW2:</strong>
-        This is work in a data structures course at Reichman University. Written in the JAVA programming language.
-      </li>
+  <!-- 10) Snake -->
+  <li id="snake" data-category="misc"
+      data-github="https://github.com/roneliav16/Resume/tree/main/Snake">
+    <strong>Snake (Assembly):</strong>
+    Dissertation in high school assembly programming. There is an explanatory video for running the game in Run instructions. Written in ASSEMBLY programming language.
+  </li>
 
-      <!-- 12) Data Structures HW5 -->
-      <li id="ds-hw5" data-category="misc"
-          data-github="https://github.com/roneliav16/Resume/tree/main/HW5"
-        <strong>Data Structures HW5:</strong>
-        Combines different sorting algorithms and their analysis using a graph. Written in the JAVA programming language.
-      </li>
+  <!-- 11) Data Structures HW2 -->
+  <li id="ds-hw2" data-category="misc"
+      data-github="https://github.com/roneliav16/Resume/tree/main/HW2">
+    <strong>Data Structures HW2:</strong>
+    This is work in a data structures course at Reichman University. Written in the JAVA programming language.
+  </li>
 
-      <!-- 13) IntroToCS -->
-      <li id="intro2cs" data-category="misc"
-          data-github="https://github.com/roneliav16/Resume/tree/main/IntroToCS"
-        <strong>IntroToCS:</strong>
-        Projects 5–9 from the Introduction to CS course; increasing difficulty; project 9 features a mini-ChatGPT flavor.
-      </li>
+  <!-- 12) Data Structures HW5 -->
+  <li id="ds-hw5" data-category="misc"
+      data-github="https://github.com/roneliav16/Resume/tree/main/HW5">
+    <strong>Data Structures HW5:</strong>
+    Combines different sorting algorithms and their analysis using a graph. Written in the JAVA programming language.
+  </li>
 
-    </ul>
+  <!-- 13) IntroToCS -->
+  <li id="intro2cs" data-category="misc"
+      data-github="https://github.com/roneliav16/Resume/tree/main/IntroToCS">
+    <strong>IntroToCS:</strong>
+    Projects 5–9 from the Introduction to CS course; increasing difficulty; project 9 features a mini-ChatGPT flavor.
+  </li>
+
+</ul>
+
 
     <p class="more-note">(More projects and details are available in the
       <a href="https://github.com/roneliav16/Resume" target="_blank" rel="noopener">Portfolio</a>.)</p>
@@ -222,6 +236,7 @@
   <script src="script.js?v=8" defer></script>
 </body>
 </html>
+
 
 
 
