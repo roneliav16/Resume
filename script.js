@@ -81,8 +81,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('.projects-list');
   if(!list) return;
 
-  // 0) Build/complete action buttons from data-* without removing existing ones
-  //    data-live, data-github, data-files, data-video
+  // 0) Clean up any pre-existing "Files" links and "Expand" buttons from HTML
+  list.querySelectorAll('.project-actions a').forEach(a => {
+    const text = a.textContent.trim().toLowerCase();
+    if (text === 'files') a.remove();
+  });
+  list.querySelectorAll('.project-actions .btn-expand, .btn.btn--ghost.btn-expand').forEach(b => b.remove());
+
+  // 0.1) Build/complete action buttons from data-* (without Files/Expand)
+  //      data-live, data-github, data-video (video only controls media display)
   const ensureActionsFromData = (li) => {
     const dataset = li.dataset || {};
     let actions = li.querySelector('.project-actions');
@@ -92,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.appendChild(actions);
     }
 
-    // helper to add <a> only if not present with same text
+    // helper to add <a> only if not present with same label
     const ensureLink = (text, href, extraClass) => {
       if(!href) return;
       const exists = [...actions.querySelectorAll('a')].some(a => a.textContent.trim() === text);
@@ -114,15 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
       actions.appendChild(b);
     };
 
-    // Links from data-*
+    // Keep ONLY Live + GitHub
     ensureLink('Live Demo', dataset.live, 'primary');
     ensureLink('GitHub', dataset.github);
-    ensureLink('Files', dataset.files);
 
-    // Copy Link (always available)
+    // Copy Link always
     ensureBtn('btn btn--ghost btn-copy', 'Copy Link', async (e) => {
-      const targetLi = li;
-      const url = `${location.origin}${location.pathname}#${targetLi.id || ''}`;
+      const url = `${location.origin}${location.pathname}#${li.id || ''}`;
       try{
         await navigator.clipboard.writeText(url);
         flash(e.currentTarget, 'Copied!');
@@ -131,15 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Expand (Lightbox אם יש וידאו; אחרת גלילה)
-    ensureBtn('btn btn--ghost btn-expand', 'Expand', () => {
-      const vid = li.querySelector('video');
-      const src = (vid && (vid.currentSrc || vid.src)) || dataset.video;
-      if(src){ openLightbox(src); }
-      else { li.scrollIntoView({behavior:'smooth', block:'start'}); }
-    });
-
-    // Inject inline video if data-video exists and no inline video yet
+    // Inject inline video ONLY if data-video exists and no inline video yet
+    // (No Expand button here)
     if(dataset.video && !li.querySelector('video')){
       const wrap = document.createElement('div');
       wrap.className = 'video-wrap';
@@ -172,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2) Wrap videos/iframes if not wrapped + add "Open in lightbox" button (kept)
+  // 2) Wrap videos/iframes if not wrapped; remove any auto-creation of Expand buttons
   list.querySelectorAll('li').forEach(li => {
     li.querySelectorAll('video, iframe').forEach(el => {
       let wrap = el.closest('.video-wrap');
@@ -183,15 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
         wrap.appendChild(el);
       }
       if(el.tagName.toLowerCase()==='video'){
-        // Add expand button only if not already created
-        if(!li.querySelector('.btn-expand')){
-          const btn = document.createElement('button');
-          btn.className = 'btn btn--ghost btn-expand';
-          btn.textContent = 'Open Fullscreen';
-          btn.addEventListener('click', () => openLightbox(el.currentSrc || el.src));
-          const actions = li.querySelector('.project-actions') || li.appendChild(Object.assign(document.createElement('div'), {className: 'project-actions'}));
-          actions.appendChild(btn);
-        }
         // Clicking the video itself opens lightbox
         el.style.cursor = 'pointer';
         el.addEventListener('click', () => openLightbox(el.currentSrc || el.src));
@@ -199,12 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3) Category chips (auto from data-category) (kept)
+  // 3) Category chips (kept)
   const chipsHost = document.getElementById('autoChips');
   if(chipsHost){
     const cats = [...new Set([...list.querySelectorAll('li')].map(li => li.dataset.category || 'misc'))];
     cats.forEach(cat => {
-      // avoid duplicates if rerun
       if([...chipsHost.children].some(c => c.textContent === cat)) return;
       const chip = document.createElement('button');
       chip.className = 'chip';
@@ -224,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4) Search & filter & sort (preserve original order by default) (kept)
+  // 4) Search & filter & sort (kept)
   const search = document.getElementById('search');
   const filter = document.getElementById('filter');
   const sortBtn = document.getElementById('sortBtn');
@@ -235,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cat = filter?.value || 'all';
     const sortAlt = sortBtn?.getAttribute('aria-pressed') === 'true';
 
-    // Filter
     const lis = [...list.querySelectorAll('li')];
     lis.forEach(li => {
       const text = li.textContent.toLowerCase();
@@ -245,7 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
       li.style.display = (okSearch && okCat) ? '' : 'none';
     });
 
-    // Sort: Original vs Alphabetic by title
     if(sortAlt){
       const visible = lis.filter(li => li.style.display !== 'none');
       visible.sort((a,b) => {
@@ -254,12 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return ta.localeCompare(tb);
       }).forEach(li => list.appendChild(li));
     } else {
-      // restore original order (only visible stay visible)
       items.forEach(li => list.appendChild(li));
     }
   }
-
-  // לחשיפה חיצונית (chips משתמש בזה)
   window.applyFilters = applyFilters;
 
   search?.addEventListener('input', applyFilters);
@@ -273,9 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   applyFilters();
 
-  // 5) Copy link buttons (kept; וגם אנחנו מוסיפים מאז ensureActionsFromData)
+  // 5) Copy link buttons (kept)
   list.querySelectorAll('.btn-copy').forEach(btn => {
-    // אם כבר יש ליסטנר מהשכבה החדשה—נכבד אותו
     if(btn.__hasCopyHandler) return;
     btn.__hasCopyHandler = true;
     btn.addEventListener('click', async () => {
@@ -292,19 +274,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6) Expand button (kept; וגם נוסיף כשצריך)
-  list.querySelectorAll('.btn-expand').forEach(btn => {
-    if(btn.__hasExpandHandler) return;
-    btn.__hasExpandHandler = true;
-    btn.addEventListener('click', () => {
-      const sel = btn.getAttribute('data-target');
-      const target = sel ? document.querySelector(sel) : btn.closest('li');
-      if(!target) return;
-      target.scrollIntoView({behavior:'smooth', block:'start'});
-      const vid = target.querySelector('video');
-      if(vid && (vid.currentSrc || vid.src)){
-        setTimeout(()=> openLightbox(vid.currentSrc || vid.src), 250);
-      }
-    });
-  });
+  // 6) (Removed) Expand listeners — no-op
 });
