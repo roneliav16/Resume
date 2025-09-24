@@ -181,3 +181,35 @@ body{
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important; transition:none !important}
 }
+
+/* מחליף את ה-width+padding-top */
+.video-wrap{
+  position: relative;
+  aspect-ratio: 16 / 9;     /* חדש ונקי */
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  margin-top: 12px;
+}
+.video-wrap iframe,
+.video-wrap video{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  display: block;
+}
+
+.video-wrap{
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.video-wrap{ opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .25s ease; }
+.video-wrap.is-visible{ opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce){
+  .video-wrap{ transition: none; }
+}
+.video-wrap iframe{ border: 0; border-radius: inherit; }
+@media (max-width:560px){
+  .video-wrap{ border-radius: 10px; }
+}
+
