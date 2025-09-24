@@ -77,6 +77,16 @@ function flash(el, text='Done'){
 }
 
 // --- Progressive enhancements for your <ul><li> content ---
+document.querySelectorAll('.video-wrap').forEach(w=>{
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){ w.classList.add('is-visible'); io.unobserve(w); }
+    });
+  }, {threshold:.15});
+  io.observe(w);
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('.projects-list');
   if(!list) return;
@@ -276,3 +286,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6) (Removed) Expand listeners — no-op
 });
+
