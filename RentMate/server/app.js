@@ -1,7 +1,11 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.gitignore/.env') });
+
+if (process.env.NODE_ENV !== 'production') {
+require('dotenv').config({ path: path.join(__dirname, './.env') });
+}
+
 
 const usersRoutes = require('./users-server');
 const purchasesRoutes = require('./purchases-server');
@@ -29,7 +33,7 @@ const limiter = rateLimit({
 app.use(limiter);
 app.use(express.json({ limit: '10kb' })); // Limit JSON body size to 10kb
 app.use((req, res, next) => {
-  res.setTimeout(5000, () => { // timeout to 5 seconds
+  res.setTimeout(50000, () => { // timeout to 5 seconds
     return res.status(408).send('Request Timeout');
   });
   next();
@@ -54,6 +58,12 @@ app.use('/api/disputes', disputesRoutes);
 app.use('/api/account', profileRoutes);
 app.use('/api/stats', statsRoutes);
 
+// For cookie parsing
+app.set('trust proxy', 1);
+
+// Health check route
+app.get('/api/health', (req, res) => res.json({ ok: true }));
+
 // HTML Routes fallback
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'));
@@ -62,3 +72,4 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`);
 });
+
