@@ -101,19 +101,28 @@ body{
   background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow:var(--shadow)
 }
 .hero__meta{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:12px}
-.hero__meta div{
+.hero__meta{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:12px;
+  align-items:stretch;   /* חשוב: למתוח לגובה הכרטיס הגבוה */
+}
+
+.hero__meta > div{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:14px;
   padding:10px;
+  text-align:center;
 
+  height:100%;           /* חשוב: באמת להתמלא בגובה */
   display:flex;
   flex-direction:column;
-  justify-content:center;   /* מרכז אנכית */
-  align-items:center;       /* מרכז אופקית */
-
-  text-align:center;
-}.hero__meta span{display:block; color:var(--muted); font-size:.8rem}
+  justify-content:center; /* מרכז אנכית */
+  align-items:center;     /* מרכז אופקית */
+}
+.hero__meta span{display:block; color:var(--muted); font-size:.8rem}
 .hero__meta strong{font-size:1.05rem}
 
 /* Chips */
@@ -223,4 +232,3 @@ body{
 @media (max-width:560px){
   .video-wrap{ border-radius: 10px; }
 }
-
