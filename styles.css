@@ -232,3 +232,14 @@ body{
 @media (max-width:560px){
   .video-wrap{ border-radius: 10px; }
 }
+
+.hero__lead{
+  color:var(--muted);
+  max-width:78ch;
+}
+.hero__lead p{
+  margin: 0 0 12px;   /* רווח בין פסקאות */
+}
+.hero__lead p:last-child{
+  margin-bottom: 0;
+}
